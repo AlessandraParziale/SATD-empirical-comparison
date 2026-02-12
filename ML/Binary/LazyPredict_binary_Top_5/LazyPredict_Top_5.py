@@ -12,6 +12,9 @@ from sklearn.ensemble import RandomForestClassifier, ExtraTreesClassifier, Baggi
 from lightgbm import LGBMClassifier
 from xgboost import XGBClassifier
 
+from codecarbon import OfflineEmissionsTracker
+
+
 warnings.filterwarnings("ignore")
 
 # ----------------------------
@@ -167,7 +170,10 @@ def run_cv_and_save_binary(dataset_path,
 
     print("\nAll done.")
 
-
+tracker = OfflineEmissionsTracker(
+    country_iso_code="ITA", project_name="ML", 
+    experiment_id="Binary_LazyPredict_Top_5", on_csv_write="append")
+tracker.start()
 run_cv_and_save_binary(
     dataset_path="merged_Dataset_Yu_undersampling.csv",
     output_dir="results_satd_binary",
@@ -175,3 +181,5 @@ run_cv_and_save_binary(
     seed=6666,
     max_features=100
 )
+emissions = tracker.stop()
+
