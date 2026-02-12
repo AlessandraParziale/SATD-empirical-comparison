@@ -1,0 +1,6 @@
+,pred_Implementation,pred_Test,pred_Defect,pred_Design,pred_Documentation
+true_Implementation,53,7,41,59,18
+true_Test,7,52,4,3,0
+true_Defect,58,12,85,29,11
+true_Design,324,52,219,300,88
+true_Documentation,2,2,1,3,16

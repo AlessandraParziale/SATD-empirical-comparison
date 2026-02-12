@@ -1,0 +1,350 @@
+Patterns,SATD THEMES,Class
+TODO,Open task,Other
+FIXME,Something to be fixed,Defect debt
+XXX,Open task,Other
+HACK,Open task,Other
+REMIND,Open task,Other
+REVIEW,Open task,Other
+REVISIT,Open task,Other
+NOTE,Open task,Other
+REMARK,Open task,Other
+CHECKME,Open task,Other
+Todo: ?,"Making Question, Open task",Other
+Todo: Check,Open task,Other
+TODO: Test,Tests to do,Test debt
+TODO: Here too?,"Inadequate location, Making Question","Design debt, Other"
+TODO: Why,Making Question,Other
+Todo: What?,Misunderstanding,Documentation debt
+Todo: how to,"Making Question, Open task",Other
+TODO: ?delete,Making Question,Other
+TODO: Issue,"Open task, Reporting Issues or problems",Other
+Todo: Make,Open task,Other
+Todo: maybe,"Open task, Uncertainty about any artifact",Other
+Todo: The recurrence,Open task,Other
+Todo: link to,Open task,Other
+TODO: Reuse,Open task,Other
+Todo: temporary,"Open task, Temporary solution or workarounds","Other, Code debt, Design debt"
+Todo: Replace,Open task,Other
+Todo: Should difine,Open task,Other
+Todo: not implemented,"Need to implement or it wasn't well implemented, Open task","Requirement debt, Other"
+Todo: split,Open task,Other
+Todo: move,Open task,Other
+Todo: verify,Open task,Other
+Todo: ??,Making Question,Other
+Todo: review,Open task,Other
+Todo: Redo,Open task,Other
+TODO: improve,To do better (improvements),Code debt
+TODO not correct,"Not according, Open task","Requirement debt, Other"
+problem here,Reporting Issues or problems,Other
+Bad code,"Bad coding practices, Violation of principles of good design, Difficult to be maintained in the future","Code debt, Design debt"
+Is there no better way?,"Making Question, To do better (improvements)","Other, Code debt"
+TODO: Is this needed?,Making Question,Other
+Todo: Does this help?,Making Question,Other
+Would it not better be,"Inadequate solution, To do better (improvements)","Code debt, Design debt"
+Find a better way to do this,"Inadequate solution, To do better (improvements)","Code debt, Design debt"
+not possible to do better,"Inadequate solution, To do better (improvements)","Code debt, Design debt"
+Todo: Is this a good way?,"Inadequate solution, Making Question, Open task, To do better (improvements)","Code debt, Design debt, Other"
+probably better ways to implement this,"Inadequate solution, To do better (improvements)","Code debt, Design debt"
+is not the correct way,"Inadequate solution, To do better (improvements)","Code debt, Design debt"
+not entirely correct,Inadequate solution,"Code debt, Design debt"
+other way to implement,"Inadequate solution, To do better (improvements)","Code debt, Design debt"
+could probably do better,To do better (improvements),Code debt
+big arrays,Bad coding practices,Code debt
+Clean Up,To do better,Code debt
+clone code,Duplicate code,"Code debt, Design debt"
+Future enhancement,To do better (improvements),Code debt
+Ignore the error,Defects or bugs,Defect debt
+It 's an error,Defects or bugs,Defect debt
+god class,"Violation of principles of good design, Violation of principles of good design",Design debt
+Harder to fix,"Difficult to be maintained in the future, Uncorrected known defects or bugs","Code debt, Uncorrected known defects or bugs"
+large class,"Difficult to be maintained in the future, Violation of principles of good design","Code debt, Design debt"
+Never implemented,Need to implement or it wasn't well implemented,Requirement debt
+no sense,Misunderstanding,Documentation debt
+not implemented,Need to implement or it wasn't well implemented,Requirement debt
+not necessary,"Not needed, Uncertainty about any artifact","Test debt, Other"
+not really needed,Not needed,Test debt
+Quality problem,"Low/bad external/internal quality of properties, Reporting Issues or problems","Code debt, Other"
+Slow performance,Performance or Robustness problems,Architecture debt
+test score for nothing,Deficiencies in testing activities,Test debt
+tired to think,Human factors,People Debt
+Unnecessary code,"Not needed, Unnecessary  or not used code","Test debt, Code debt"
+Violation of modularity,Violation of modularity,Architecture debt
+What?,Misunderstanding,Documentation debt
+What do we do,Making Question,Other
+What about?,Making Question,Other
+Don't appear to be used,"Difficult to be maintained in the future, Unnecessary  or not used code",Code debt
+not used in the new APIs,"Can causes exception, Difficult to be maintained in the future",Code debt
+not used,Unnecessary  or not used code,Code debt
+code is not used,"Difficult to be maintained in the future, Unnecessary  or not used code",Code debt
+no faults are fixed,"Defects or bugs, Uncorrected known defects or bugs","Defect debt, Uncorrected known defects or bugs"
+not work,It is not working or does not work very well,Code debt
+Todo: This does not work,It is not working or does not work very well,Code debt
+TODO: check if this works,It is not working or does not work very well,Code debt
+cyclic dependency,Dependency,Architecture debt
+dependency cycle,Dependency,Architecture debt
+Why is this not done,Inadequate solution,"Code debt, Design debt"
+Todo: Why do I need to do this?,"Making Question, Task should not be done",Other
+Why are these gone?,Making Question,Other
+Todo: Why is this here?,"Inadequate location, Making Question","Design debt, Other"
+why synchronized?,Making Question,Other
+Todo: Why was,"Making Question, Open task",Other
+TODO: why is this inside a block?,"Inadequate location, Making Question","Design debt, Other"
+Todo: Why does it fail,"Defects or bugs, Making Question","Defect debt, Other"
+causes and exception,Can causes exception,Code debt
+not seem to define this name,Not according,Requirement debt
+show some documentation?,Documentation-missing or inadequate or incomplete,Documentation debt
+Not are useful here,Inadequate location,Design debt
+nobody is using,Unnecessary  or not used code,Code debt
+nobody ever looks,Human factors,People Debt
+is there a problem,Reporting Issues or problems,Other
+I don't think,"Not according, Human factors","Requirement debt, People Debt"
+For debugging,Open task,Other
+let's be sure,Need to be safe,Requirement debt
+I don't understant,Misunderstanding,Documentation debt
+not sure why,Uncertainty about any artifact,Other
+It causes the feedback loop,Can causes exception,Code debt
+must be re-introduced to solve,"Open task, Task to be solved",Other
+may be optimised,To do better (improvements),Code debt
+Is there any other way?,"Making Question, To do better (improvements)","Other, Code debt"
+not the right location,Inadequate location,Design debt
+Will be able,Open task,Other
+probably redundant,Duplicate code,"Code debt, Design debt"
+it is used in several places,Duplicate code,"Code debt, Design debt"
+clone of this code,Duplicate code,"Code debt, Design debt"
+Need to Copy,Duplicate code,"Code debt, Design debt"
+chose not to do this,Open task,Other
+Todo: Which is best?,"Making Question, To do better (improvements)","Other, Code debt"
+This is a bug,Defects or bugs,Defect debt
+cause issue,"Can causes exception, Reporting Issues or problems","Code debt, Other"
+not according,Not according,Requirement debt
+is not a valid one,Not according,Requirement debt
+is slightly different than what's documented,"Documentation-missing or inadequate or incomplete, Not according","Documentation debt, Requirement debt"
+cause problem,"Can causes exception, Reporting Issues or problems","Code debt, Other"
+still has some problems,Reporting Issues or problems,Other
+Todo: does not handle,Can causes exception,Code debt
+Todo: Handle,Open task,Other
+TODO: I don't think it's normal,"Human factors, Inadequate location, Not according","People Debt, Design debt, Requirement debt"
+TODO: I don't think it's normal,Violation of principles of good design,Design debt
+THIS IS A HACK,"Open task, Reporting Issues or problems",Other
+memory cosuming,Unnecessary time or memory consuming,Build debt
+Todo: This needs more work!,"Difficult to be maintained in the future, It is not working or does not work very well, Open task","Code debt, Other"
+Todo: does not work,It is not working or does not work very well,Code debt
+to be safe,Need to be safe,Requirement debt
+take care,Need to be safe,Requirement debt
+inherited problems,Reporting Issues or problems,Other
+problems directly in,Reporting Issues or problems,Other
+contains some errors,Defects or bugs,Defect debt
+FIXME: this could be a problem,"Reporting Issues or problems, Something to be fixed","Other, Defect debt"
+Low code coverage,Insufficient code coverage,Test debt
+Bad coding practies,Bad coding practices,Code debt
+Time consuming,Unnecessary time or memory consuming,Build debt
+Deficiency in testing activities,Deficiencies in testing activities,Test debt
+necessity of understanding,Need to implement or it wasn't well implemented,Requirement debt
+Work in progress here,Open task,Other
+Note: This is temporary,Temporary solution or workarounds,"Code debt, Design debt"
+TODO: maybe should stop,"Task should not be done, Uncertainty about any artifact",Other
+need to be in their own files?,"Inadequate location, Open task","Design debt, Other"
+A much better way,To do better (improvements),Code debt
+defined in the ToDoItem,Open task,Other
+changes the complete structure,Violation of principles of good design,Design debt
+Who is calling this?,"Can causes exception, Making Question","Code debt, Other"
+manually created todo item,Open task,Other
+Todo: This probably belongs,Inadequate location,Design debt
+needs documenting,Documentation-missing or inadequate or incomplete,Documentation debt
+Information that is required,Documentation-missing or inadequate or incomplete,Documentation debt
+replace the deprecated,Deprecated code,Code debt
+currently not used,"Status of the work, Unnecessary  or not used code","Other, Code debt"
+not support Java 1.3 any more,"Difficult to be maintained in the future, Inadequate solution","Code debt, Design debt"
+need to be fixed,"Reporting Issues or problems, Something to be fixed","Other, Defect debt"
+Todo: We could also support,Open task,Other
+problems directly in this class,"It is not working or does not work very well, Reporting Issues or problems","Code debt, Other"
+need to do anything here?,"Inadequate location, Making Question","Design debt, Other"
+good solution?,"Making Question, To do better (improvements)","Other, Code debt"
+Todo: improve algorithm,"Open task, To do better (improvements)","Other, Code debt"
+What to do,Uncertainty about any artifact,Other
+Note: maybe,Uncertainty about any artifact,Other
+Todo: correctly implement,"Need to implement or it wasn't well implemented, Open task","Requirement debt, Other"
+Todo: This is a temporary method,"Open task, Temporary solution or workarounds","Other, Code debt, Design debt"
+I don't understand,Misunderstanding,Documentation debt
+Todo: This is not according,Not according,Requirement debt
+Todo: This needs work,It is not working or does not work very well,Code debt
+unwanted dependency,Dependency,Architecture debt
+all memory allocated,Unnecessary time or memory consuming,Build debt
+to free memory,Unnecessary time or memory consuming,Build debt
+bug workaround,"Defects or bugs, Inadequate solution","Defect debt, Code debt, Design debt"
+Workaround for a bug,Defects or bugs,Defect debt
+this sucks,Low/bad external/internal quality of properties,Code debt
+timing-dependent,Dependency,Architecture debt
+TODO: maybe we should resolve,"Open task, Task to be solved",Other
+TODO: maybe take here?,"Inadequate location, Uncertainty about any artifact","Design debt, Other"
+TODO maybe it would make,"Open task, Uncertainty about any artifact",Other
+should never happen,Not according,Requirement debt
+will never be,Unnecessary  or not used code,Code debt
+makes no sense,Not according,Requirement debt
+known problem,Reporting Issues or problems,Other
+is not enough,Low/bad external/internal quality of properties,Code debt
+make sense?,Making Question,Other
+broken down,It is not working or does not work very well,Code debt
+horribly Inefficient,It is not working or does not work very well,Code debt
+consume very large,Performance or Robustness problems,Architecture debt
+modular violation,Violation of modularity,Architecture debt
+large coupled,"Difficult to be maintained in the future, Violation of principles of good design","Code debt, Design debt"
+Not recommended,Not according,Requirement debt
+not sure,Uncertainty about any artifact,Other
+Problem of performance,Performance or Robustness problems,Architecture debt
+needes to be cleared,Open task,Other
+need to factor,Open task,Other
+Should be overriden,Open task,Other
+no longer be used,Open task,Other
+barely understood,Misunderstanding,Documentation debt
+bad smell,Violation of principles of good design,Design debt
+deprecated code,Deprecated code,Code debt
+deprecated api,Deprecated code,Code debt
+would be better,To do better (improvements),Code debt
+probably a bug,Defects or bugs,Defect debt
+Todo: Add implementation,"Need to implement or it wasn't well implemented, Open task","Requirement debt, Other"
+Todo: Add,Open task,Other
+Todo: Fix,"Task to be solved, Uncorrected known defects or bugs","Other, Uncorrected known defects or bugs"
+Remove All,Need to implement or it wasn't well implemented,Other
+remove dependencies later,Dependency,Architecture debt
+Remove the dependent,Dependency,Architecture debt
+remove literal,Need to implement or it wasn't well implemented,Other
+move to the correct owner,Inadequate location,Design debt
+Todo: Change,Open task,Other
+Need to be amended,Open task,Other
+Not created yet,Not according,Requirement debt
+deprecated call,Deprecated code,Code debt
+to be verified,Open task,Other
+Todo: Check the name,Open task,Other
+maybe can be implemented,"Need to implement or it wasn't well implemented, Uncertainty about any artifact","Requirement debt, Other"
+is not yet completely implemented,Need to implement or it wasn't well implemented,Requirement debt
+not yet used,Unnecessary  or not used code,Code debt
+is not updated,Temporary solution or workarounds,Code debt
+how do we resolve this?,"Making Question, Task to be solved",Other
+TODO: resolve item,"Open task, Task to be solved",Other
+has to be,Open task,Other
+have to set,Open task,Other
+have to move,Open task,Other
+Have to add,Open task,Other
+TODO: Do we really have to test,"Open task, Tests to do","Other, Test debt"
+have to delete it later,"Open task, Status of the work",Other
+Have to do,Open task,Other
+must be resized,Open task,Other
+need to clone,"Making Question, Open task",Other
+need to refactor,"Open task, To do better (improvements)","Other, Code debt"
+need to set,Open task,Other
+Need to be reviewed,Open task,Other
+Need to be updated,Open task,Other
+need to be moved someplace useful,"Inadequate location, Open task","Design debt, Other"
+need to be,Open task,Other
+Todo: Not sure we need to do this,"Open task, Uncertainty about any artifact",Other
+need to jump,Open task,Other
+should be visible,Open task,Other
+Why should it pass?,Making Question,Other
+should be taken out,Open task,Other
+I don't think,"Not according, Human factors","Requirement debt, People Debt"
+should be fixed,"Open task, Uncorrected known defects or bugs","Other, Uncorrected known defects or bugs"
+This should NOT be looking,"Open task, Task should not be done",Other
+should actually not be placed here,Inadequate location,Design debt
+should not be necessary,Not according,Requirement debt
+should not have,Task should not be done,Other
+not to do this to keep architecture stable,"Task should not be done, Performance or Robustness problems","Other, Architecture debt"
+doesn't do anything,It is not working or does not work very well,Code debt
+Will be needed,Open task,Other
+shall never,Open task,Other
+Should find,Open task,Other
+should handle,Open task,Other
+Should modify,Open task,Other
+here?,Inadequate location,Design debt
+Todo: Here we should,Open task,Other
+Will be hard work,Low/bad external/internal quality of properties,Code debt
+arbitrary dimensions,Low/bad external/internal quality of properties,Code debt
+somewhat inconsistent,"Difficult to be maintained in the future, Violation of principles of good design","Code debt, Design debt"
+method is unsafe,"Low/bad external/internal quality of properties, Need to be safe","Code debt, Requirement debt"
+Dirty fix,"Difficult to be maintained in the future, Low/bad external/internal quality of properties","Code debt, Code debt"
+temporary solution,Temporary solution or workarounds,"Code debt, Design debt"
+possible future improvement,To do better (improvements),Code debt
+future maintenance,Status of the work,Other
+future potential optimizations,To do better (improvements),Code debt
+Future release,Status of the work,Other
+in the Future,Status of the work,Other
+unnecessarily complicated,Difficult to be maintained in the future,Code debt
+This case is complicated,Difficult to be maintained in the future,Code debt
+Todo: required,Open task,Other
+TODO: Is this required?,Making Question,Other
+Remove duplicates,Duplicate code,"Code debt, Design debt"
+not quite right,Not according,Requirement debt
+get confused,Difficult to be maintained in the future,Code debt
+confusing name,Bad coding practices,Code debt
+Code so long?,Bad coding practices,Code debt
+difficult to maintain,Difficult to be maintained in the future,Code debt
+extra work,Need to implement or it wasn't well implemented,Requirement debt
+perhaps move to,Open task,Other
+fails the test,Deficiencies in testing activities,Test debt
+can fail,"Can causes exception, Defects or bugs","Code debt, Defect debt"
+assert fails,Defects or bugs,Defect debt
+never called,Status of the work,Other
+never have,Status of the work,Other
+repeated code,Duplicate code,"Code debt, Design debt"
+rather bad,To do better,Code debt
+alternative implementation,Temporary solution or workarounds,"Code debt, Design debt"
+very expensive,Low/bad external/internal quality of properties,Code debt
+Note: loose type,Open task,Other
+Note: kind of far-fetched,Low/bad external/internal quality of properties,Code debt
+Note: This class is messy,Violation of principles of good design,Design debt
+XXX: hairy code,Difficult to be maintained in the future,Code debt
+Should be careful,Need to be safe,Requirement debt
+plainly impossible,Difficult to be maintained in the future,Code debt
+binding bug,Defects or bugs,Defect debt
+This is not a sufficient,Need to implement or it wasn't well implemented,Requirement debt
+weird hack,Low/bad external/internal quality of properties,Code debt
+can be expensive,Low/bad external/internal quality of properties,Code debt
+This could possibly hurt performance,Performance or Robustness problems,Architecture debt
+is not reliable as a unit test,Deficiencies in testing activities,Test debt
+fully opaque,Low/bad external/internal quality of properties,Code debt
+seems wrong,Not according,Requirement debt
+something's gone wrong,Not according,Requirement debt
+Todo: implement this,Need to implement or it wasn't well implemented,Requirement debt
+Todo: Party overlaps,Open task,Other
+Todo: Update,Open task,Other
+can be deleted,Open task,Other
+can probably have,Open task,Other
+clone method,Duplicate code,"Code debt, Design debt"
+have to use,Open task,Other
+later use,Status of the work,Other
+must be moved,Open task,Other
+must come before,Not according,Requirement debt
+must notify modification,Open task,Other
+need to check,Open task,Other
+need to extend,Open task,Other
+need to listen,Open task,Other
+need to verify,Open task,Other
+TODO: indicate the direction!,Open task,Other
+will be useful,Open task,Other
+would seem to imply,Open task,Other
+will be replaced,Open task,Other
+update the model,Deprecated code,Code debt
+Calls are ORDER DEPENDENT,Dependency,Architecture debt
+Do we need,Making Question,Other
+loops are double,Can causes exception,Code debt
+may be no need,Not needed,Test debt
+"now remove the pool, too",Open task,Other
+reduce the number,Open task,Other
+references to elements of other packages?,Making Question,Other
+will cause,Open task,Other
+good idea?,"Inadequate solution, Making Question, Open task, To do better (improvements)","Code debt, Design debt, Other"
+can be,Open task,Other
+have to,Open task,Other
+must be,Open task,Other
+need to,Open task,Other
+should be,Open task,Other
+should have,Open task,Other
+would be,Open task,Other
+will be,Open task,Other
+could be,Open task,Other
+would have,Open task,Other
+should never,Task should not be done,Other
+must have,Open task,Other
+may have,Open task,Other
+should allow,Open task,Other
+should use,Open task,Other

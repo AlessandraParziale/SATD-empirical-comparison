@@ -1,0 +1,21 @@
+Dataset: merged_Dataset_Yu.csv
+Model: meta-llama/Llama-3.1-8B-Instruct
+Prompt: MAT (TODO/FIXME/HACK/XXX), task-level (no examples)
+Evaluation: whole dataset (no split)
+
+              precision    recall  f1-score   support
+
+    Not-SATD      0.971     0.794     0.873    126906
+        SATD      0.134     0.577     0.218      7028
+
+    accuracy                          0.782    133934
+   macro avg      0.553     0.685     0.546    133934
+weighted avg      0.927     0.782     0.839    133934
+
+         Not-SATD SATD    
+Not-SATD 100707   26199   
+SATD     2970     4058    
+
+
+Number of unrecognized predictions: 2777
+We considered them as the majority class (Not-SATD).

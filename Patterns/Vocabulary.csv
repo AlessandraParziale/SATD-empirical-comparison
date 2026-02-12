@@ -1,0 +1,350 @@
+Patterns
+TODO
+FIXME
+XXX
+HACK
+REMIND
+REVIEW
+REVISIT
+NOTE
+REMARK
+CHECKME
+Todo: ?
+Todo: Check
+TODO: Test
+TODO: Here too?
+TODO: Why
+Todo: What?
+Todo: how to
+TODO: ?delete
+TODO: Issue
+Todo: Make
+Todo: maybe
+Todo: The recurrence
+Todo: link to
+TODO: Reuse
+Todo: temporary
+Todo: Replace
+Todo: Should difine
+Todo: not implemented
+Todo: split
+Todo: move
+Todo: verify
+Todo: ??
+Todo: review
+Todo: Redo
+TODO: improve
+TODO not correct
+problem here
+Bad code
+Is there no better way?
+TODO: Is this needed?
+Todo: Does this help?
+Would it not better be
+Find a better way to do this
+not possible to do better
+Todo: Is this a good way?
+probably better ways to implement this
+is not the correct way
+not entirely correct
+other way to implement
+could probably do better
+big arrays
+Clean Up
+clone code
+Future enhancement
+Ignore the error
+It 's an error
+god class
+Harder to fix
+large class
+Never implemented
+no sense
+not implemented
+not necessary
+not really needed
+Quality problem
+Slow performance
+test score for nothing
+tired to think
+Unnecessary code
+Violation of modularity
+What?
+What do we do
+What about?
+Don't appear to be used
+not used in the new APIs
+not used
+code is not used
+no faults are fixed
+not work
+Todo: This does not work
+TODO: check if this works
+cyclic dependency
+dependency cycle
+Why is this not done
+Todo: Why do I need to do this?
+Why are these gone?
+Todo: Why is this here?
+why synchronized?
+Todo: Why was
+TODO: why is this inside a block?
+Todo: Why does it fail
+causes and exception
+not seem to define this name
+show some documentation?
+Not are useful here
+nobody is using
+nobody ever looks
+is there a problem
+I don't think
+For debugging
+let's be sure
+I don't understant
+not sure why
+It causes the feedback loop
+must be re-introduced to solve
+may be optimised
+Is there any other way?
+not the right location
+Will be able
+probably redundant
+it is used in several places
+clone of this code
+Need to Copy
+chose not to do this
+Todo: Which is best?
+This is a bug
+cause issue
+not according
+is not a valid one
+is slightly different than what's documented
+cause problem
+still has some problems
+Todo: does not handle
+Todo: Handle
+TODO: I don't think it's normal
+TODO: I don't think it's normal
+THIS IS A HACK
+memory cosuming
+Todo: This needs more work!
+Todo: does not work
+to be safe
+take care
+inherited problems
+problems directly in
+contains some errors
+FIXME: this could be a problem
+Low code coverage
+Bad coding practies
+Time consuming
+Deficiency in testing activities
+necessity of understanding
+Work in progress here
+Note: This is temporary
+TODO: maybe should stop
+need to be in their own files?
+A much better way
+defined in the ToDoItem
+changes the complete structure
+Who is calling this?
+manually created todo item
+Todo: This probably belongs
+needs documenting
+Information that is required
+replace the deprecated
+currently not used
+not support Java 1.3 any more
+need to be fixed
+Todo: We could also support
+problems directly in this class
+need to do anything here?
+good solution?
+Todo: improve algorithm
+What to do
+Note: maybe
+Todo: correctly implement
+Todo: This is a temporary method
+I don't understand
+Todo: This is not according
+Todo: This needs work
+unwanted dependency
+all memory allocated
+to free memory
+bug workaround
+Workaround for a bug
+this sucks
+timing-dependent
+TODO: maybe we should resolve
+TODO: maybe take here?
+TODO maybe it would make
+should never happen
+will never be
+makes no sense
+known problem
+is not enough
+make sense?
+broken down
+horribly Inefficient
+consume very large
+modular violation
+large coupled
+Not recommended
+not sure
+Problem of performance
+needes to be cleared
+need to factor
+Should be overriden
+no longer be used
+barely understood
+bad smell
+deprecated code
+deprecated api
+would be better
+probably a bug
+Todo: Add implementation
+Todo: Add
+Todo: Fix
+Remove All
+remove dependencies later
+Remove the dependent
+remove literal
+move to the correct owner
+Todo: Change
+Need to be amended
+Not created yet
+deprecated call
+to be verified
+Todo: Check the name
+maybe can be implemented
+is not yet completely implemented
+not yet used
+is not updated
+how do we resolve this?
+TODO: resolve item
+has to be
+have to set
+have to move
+Have to add
+TODO: Do we really have to test
+have to delete it later
+Have to do
+must be resized
+need to clone
+need to refactor
+need to set
+Need to be reviewed
+Need to be updated
+need to be moved someplace useful
+need to be
+Todo: Not sure we need to do this
+need to jump
+should be visible
+Why should it pass?
+should be taken out
+I don't think
+should be fixed
+This should NOT be looking
+should actually not be placed here
+should not be necessary
+should not have
+not to do this to keep architecture stable
+doesn't do anything
+Will be needed
+shall never
+Should find
+should handle
+Should modify
+here?
+Todo: Here we should
+Will be hard work
+arbitrary dimensions
+somewhat inconsistent
+method is unsafe
+Dirty fix
+temporary solution
+possible future improvement
+future maintenance
+future potential optimizations
+Future release
+in the Future
+unnecessarily complicated
+This case is complicated
+Todo: required
+TODO: Is this required?
+Remove duplicates
+not quite right
+get confused
+confusing name
+Code so long?
+difficult to maintain
+extra work
+perhaps move to
+fails the test
+can fail
+assert fails
+never called
+never have
+repeated code
+rather bad
+alternative implementation
+very expensive
+Note: loose type
+Note: kind of far-fetched
+Note: This class is messy
+XXX: hairy code
+Should be careful
+plainly impossible
+binding bug
+This is not a sufficient
+weird hack
+can be expensive
+This could possibly hurt performance
+is not reliable as a unit test
+fully opaque
+seems wrong
+something's gone wrong
+Todo: implement this
+Todo: Party overlaps
+Todo: Update
+can be deleted
+can probably have
+clone method
+have to use
+later use
+must be moved
+must come before
+must notify modification
+need to check
+need to extend
+need to listen
+need to verify
+TODO: indicate the direction!
+will be useful
+would seem to imply
+will be replaced
+update the model
+Calls are ORDER DEPENDENT
+Do we need
+loops are double
+may be no need
+"now remove the pool, too"
+reduce the number
+references to elements of other packages?
+will cause
+good idea?
+can be
+have to
+must be
+need to
+should be
+should have
+would be
+will be
+could be
+would have
+should never
+must have
+may have
+should allow
+should use

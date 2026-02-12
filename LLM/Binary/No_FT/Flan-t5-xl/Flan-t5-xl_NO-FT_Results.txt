@@ -1,0 +1,21 @@
+Dataset: merged_Dataset_Yu_undersampling.csv
+Model: google/flan-t5-xl
+Prompt: MAT (TODO/FIXME/HACK/XXX), task-level (no examples)
+Evaluation: whole dataset (no split)
+
+              precision    recall  f1-score   support
+
+    Not-SATD      0.573     0.999     0.728      7028
+        SATD      0.996     0.256     0.407      7028
+
+    accuracy                          0.627     14056
+   macro avg      0.784     0.627     0.568     14056
+weighted avg      0.784     0.627     0.568     14056
+
+         Not-SATD SATD    
+Not-SATD 7020     8       
+SATD     5230     1798    
+
+
+Number of unrecognized predictions: 1
+

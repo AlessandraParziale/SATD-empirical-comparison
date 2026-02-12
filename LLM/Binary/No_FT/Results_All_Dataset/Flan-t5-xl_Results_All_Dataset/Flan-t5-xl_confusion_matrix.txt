@@ -1,0 +1,21 @@
+Dataset: merged_Dataset_Yu.csv
+Model: google/flan-t5-xl
+Prompt: MAT (TODO/FIXME/HACK/XXX), task-level (no examples)
+Evaluation: whole dataset (no split)
+
+              precision    recall  f1-score   support
+
+    Not-SATD      0.960     0.998     0.979    126906
+        SATD      0.893     0.255     0.396      7028
+
+    accuracy                          0.959    133934
+   macro avg      0.927     0.627     0.688    133934
+weighted avg      0.957     0.959     0.948    133934
+
+         Not-SATD SATD    
+Not-SATD 126692   214     
+SATD     5238     1790    
+
+
+Number of unrecognized predictions: 0
+We considered them as the majority class (Not-SATD).
