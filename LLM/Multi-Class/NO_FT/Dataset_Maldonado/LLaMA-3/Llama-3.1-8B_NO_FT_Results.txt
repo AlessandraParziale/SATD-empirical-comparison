@@ -1,0 +1,23 @@
+Evaluation:
+
+                precision    recall  f1-score   support
+
+IMPLEMENTATION      0.218     0.728     0.336       757
+          TEST      0.496     0.659     0.566        85
+        DEFECT      0.311     0.290     0.300       472
+        DESIGN      0.841     0.225     0.355      2703
+ DOCUMENTATION      0.125     0.630     0.208        54
+
+      accuracy                          0.340      4071
+     macro avg      0.398     0.506     0.353      4071
+  weighted avg      0.647     0.340     0.348      4071
+
+               IMPLEMENTATION TEST           DEFECT         DESIGN         DOCUMENTATION 
+IMPLEMENTATION 551            11             70             69             56            
+TEST           17             56             8              3              1             
+DEFECT         268            12             137            35             20            
+DESIGN         1677           33             223            608            162           
+DOCUMENTATION  9              1              2              8              34            
+
+
+Number of unrecognized predictions: 1236

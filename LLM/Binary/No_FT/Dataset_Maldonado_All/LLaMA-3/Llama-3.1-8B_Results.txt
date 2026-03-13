@@ -1,0 +1,21 @@
+Dataset: maldonado.csv
+Model: meta-llama/Llama-3.1-8B-Instruct
+Prompt: MAT (TODO/FIXME/HACK/XXX), task-level (no examples)
+Evaluation: whole dataset (no split)
+
+              precision    recall  f1-score   support
+
+    Not-SATD      0.988     0.608     0.752     57778
+        SATD      0.152     0.902     0.260      4497
+
+    accuracy                          0.629     62275
+   macro avg      0.570     0.755     0.506     62275
+weighted avg      0.927     0.629     0.717     62275
+
+         Not-SATD SATD    
+Not-SATD 35105    22673   
+SATD     439      4058    
+
+
+Number of unrecognized predictions: 1721
+We considered them as the majority class (Not-SATD).

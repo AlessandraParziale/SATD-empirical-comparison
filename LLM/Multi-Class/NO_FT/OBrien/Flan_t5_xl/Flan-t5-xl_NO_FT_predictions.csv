@@ -1,0 +1,469 @@
+context,real,pred
+"### Technical debt comment: """""" ''' || Functions used by more than one algorithm || TODO refactor properly later || ''' """"""",DESIGN,CODE
+"### Technical debt comment: """""" !TODO """"""",CODE,DEFECT
+"### Technical debt comment: """""" !TODO: In some cases; US is not enough to hold the complete number """"""",DEFECT,DEFECT
+"### Technical debt comment: """""" # Hack to center SVG as justify-content is broken: """"""",DEFECT,CODE
+"### Technical debt comment: """""" # hackier; fixme to use regex or something """"""",CODE,CODE
+"### Technical debt comment: """""" # TODO Change to call remote model """"""",CODE,DESIGN
+"### Technical debt comment: """""" # TODO May want to rewrite name; index; uuid; etc. """"""",CODE,DESIGN
+"### Technical debt comment: """""" # TODO: Set name (using \""functionality.__name__\"") if name is None """"""",CODE,CODE
+"### Technical debt comment: """""" ## TODO: """"""",DESIGN,DEFECT
+"### Technical debt comment: """""" ## TODO: intercept for all models """"""",DESIGN,DEFECT
+"### Technical debt comment: """""" #TODO: this can become a nice tutorial for generating phantoms """"""",DOCUMENTATION,DESIGN
+"### Technical debt comment: """""" ((); 0); # TODO(sonots): Fix compatibility """"""",DEFECT,CODE
+"### Technical debt comment: """""" ((); 0); # TODO(sonots): Fix compatibility """"""",DEFECT,CODE
+"### Technical debt comment: """""" @TODO: """"""",M&T,DOCUMENTATION
+"### Technical debt comment: """""" @TODO: code formatting issue for 20.07 release """"""",CODE,CODE
+"### Technical debt comment: """""" @TODO: code formatting issue for 20.07 release """"""",CODE,CODE
+"### Technical debt comment: """""" @TODO: Refactor !!! """"""",CODE,CODE
+"### Technical debt comment: """""" @TODO: remove time usage; use it under the hood """"""",CODE,DEFECT
+"### Technical debt comment: """""" [todo]: this is a bug; predict_proba should not change """"""",DEFECT,DEFECT
+"### Technical debt comment: """""" \""\""\""   || #TODO: || class HopfieldModel(LatentModel): ||      ||     def __init__(self; nvis; nhid): ||         self.layers = {} ||         self.layers['visible'] = layers.IsingLayer(nvis) ||         self.layers['hidden'] = layers.GaussianLayer(nhid) ||          ||         self.params = {} ||         self.params['weights'] = numpy.random.normal(loc=0.0; scale=1.0; size=(self.layers['visible'].len; self.layers['hidden'].len)).astype(dtype=numpy.float32) ||         self.params['bias'] = numpy.ones_like(self.layers['visible'].loc)   ||  ||  || class HookeMachine(LatentModel): ||      ||     def __init__(self; nvis; nhid; vis_type='gauss'; hid_type='expo'):    ||         assert vis_type.lower() in ['gauss'; 'ising'] ||         assert hid_type.lower() in ['expo'; 'bern'] ||          ||         self.layers = {} ||         self.layers['visible'] = layers.get(vis_type)(nvis) ||         self.layers['hidden'] = layers.get(hid_type)(nhid) ||          ||         self.params = {} ||         self.params['weights'] = numpy.random.normal(loc=0.0; scale=1.0; size=(self.layers['visible'].len; self.layers['hidden'].len)).astype(dtype=numpy.float32) ||         self.params['bias'] = numpy.ones_like(self.layers['hidden'].loc)   ||         self.params['T'] = numpy.ones(1; dtype=numpy.float32) ||                  ||         self.deriv = {} ||         self.deriv['weights'] = numpy.zeros_like(self.params['weights']) ||         self.deriv['bias'] = numpy.zeros_like(self.params['bias']) ||         self.params['T'] = numpy.zeros_like(self.params['T']) ||          ||         self.set_vis(numpy.zeros_like(self.layers['visible'].loc)) ||          ||     def set_vis(self; vis): ||         self.vis = vis ||         self.diff = (self.params['weights'].T - vis).T ||         self.squared_dist = numpy.sum(self.diff ** 2; axis=0) ||         self.layers['hidden'].update_params(self.params['bias'] + self.squared_dist \/ (2 * self.params['T'])) ||         self.energy = -numpy.sum(numpy.log(self.layers['hidden'].partition_function()))         ||          ||     def visible_conditional_params(self; hid): ||         total = numpy.sum(hid) ||         loc = numpy.dot(self.params['weights']; hid) \/ total ||         scale = self.params['T'] \/ total * numpy.ones_like(self.layers['visible'].loc) ||         return (loc; scale) ||          ||     def update_visible_params(self; hid): ||         self.layers['visible'].update_params(*self.visible_conditional_params(hid)) ||          ||     def derivatives(self; vis; key): ||         self.update_hidden_params(vis) ||         hidden_mean = self.layers['hidden'].mean() ||         if key == 'bias': ||             # del H(v; k) \/ del b ||             return hidden_mean ||         elif key == 'weights': ||             # del H(v; k) \/ del W ||             return (self.difference(vis) * hidden_mean.T) \/ self.params['T'] ||         elif key == 'T': ||             # del H(v;k) \/ del T ||             return numpy.dot(hidden_mean.T; self.squared_distance(vis)) ||         else: ||             raise ValueError('unknown key: {}'.format(key)) ||     \""\""\"" """"""",DESIGN,DEFECT
+"### Technical debt comment: """""" \""\""\"" || .. todo:: ||     doc || \""\""\"" """"""",DOCUMENTATION,DOCUMENTATION
+"### Technical debt comment: """""" \""\""\"" || :mod:`orion.algo.hyperband.hyperband -- TODO || ================================================= ||  || .. module:: hyperband ||     :platform: Unix ||     :synopsis: TODO ||  || TODO: Write long description || \""\""\"" """"""",DOCUMENTATION,DEFECT
+"### Technical debt comment: """""" \""\""\"" || ========================== || FastICA on 2D point clouds || ========================== ||  || XXX: Still buggy !!! ||  || \""\""\"" """"""",DEFECT,DEFECT
+"### Technical debt comment: """""" \""\""\"" Turn compiler.ast structures back into executable python code. ||  ||     The unparse method takes a compiler.ast tree and transforms it back into ||     valid python code.  It is incomplete and currently only works for ||     import statements; function calls; function definitions; assignments; and ||     basic expressions. ||  ||     Inspired by python-2.5-svn\/Demo\/parser\/unparse.py ||  ||     fixme: We may want to move to using _ast trees because the compiler for ||            them is about 6 times faster than compiler.compile. || \""\""\"" """"""",CODE,CODE
+"### Technical debt comment: """""" \""\""\""Convert MdC transliterated text to Unicode. ||  || TODO: Add tests and clean up. || \""\""\"" """"""",M&T,CODE
+"### Technical debt comment: """""" \""\""\""Converts legacy encodings into Unicode. ||  || TODO: Rm regex dependency || TODO: Add tests || \""\""\"" """"""",M&T,CODE
+"### Technical debt comment: """""" \""\""\""Tools for diffing notebooks. ||  || All diff tools here currently assumes the notebooks have already been || converted to the same format version; currently v4 at time of writing. || Up- and down-conversion is handled by nbformat. ||  || FIXME: Define and document diff format. || \""\""\"" """"""",DOCUMENTATION,DESIGN
+"### Technical debt comment: """""" \""confidence\"": 1  # todo discussion confidence from GNormPlus is not provided so just putting in here 1 """"""",CODE,DEFECT
+"### Technical debt comment: """""" \""PickupAbove\"": [TODO]; """"""",CODE,DEFECT
+"### Technical debt comment: """""" \/\/TODO in future add arguments compatibility check """"""",DESIGN,DESIGN
+"### Technical debt comment: """""" all games are zero sum that are trained and because 2 values; x2 the error.  XXX """"""",DEFECT,DEFECT
+"### Technical debt comment: """""" apparently package_deps are broken in 3.4 """"""",DEFECT,DEFECT
+"### Technical debt comment: """""" As a workaround; we wrap the function and invoke it in __call__ method. """"""",DESIGN,CODE
+"### Technical debt comment: """""" circular shift the signal (needed for correct phase) """"""",CODE,DESIGN
+"### Technical debt comment: """""" DEPRICATE? I don't think this is needed anymore """"""",CODE,DEFECT
+"### Technical debt comment: """""" Double newlines seem to mess with the rendering """"""",DEFECT,CODE
+"### Technical debt comment: """""" dynamic_pad=True) # HACK TESTING dynamic_pad=True """"""",M&T,M&T
+"### Technical debt comment: """""" Ensure we're really passing an ndarray to _pool.step() """"""",DEFECT,CODE
+"### Technical debt comment: """""" env = ScaledFloatFrame(env)  # TODO: use for dqn? """"""",CODE,CODE
+"### Technical debt comment: """""" Extract the output size of the layer to fit resize after the concatenation TODO put it in doc """"""",DOCUMENTATION,DOCUMENTATION
+"### Technical debt comment: """""" FIX: tensorflow#3388 """"""",DEFECT,DEFECT
+"### Technical debt comment: """""" FIXME """"""",CODE,DOCUMENTATION
+"### Technical debt comment: """""" FIXME """"""",CODE,DOCUMENTATION
+"### Technical debt comment: """""" FIXME _skip_test should be used here (if we could) """"""",CODE,M&T
+"### Technical debt comment: """""" FIXME annoying hack for batching different sized shapes; """"""",CODE,DESIGN
+"### Technical debt comment: """""" FIXME generic call """"""",CODE,DOCUMENTATION
+"### Technical debt comment: """""" FIXME homogeneize the meaning of margin parameter """"""",DESIGN,DESIGN
+"### Technical debt comment: """""" FIXME open exclusively; other celery thread might screw up """"""",DEFECT,DEFECT
+"### Technical debt comment: """""" FIXME remove test when square_distances=True becomes the default in 0.26 """"""",CODE,M&T
+"### Technical debt comment: """""" FIXME This will make sense when all controllers are in one file (like task.py) """"""",DESIGN,DESIGN
+"### Technical debt comment: """""" FIXME XXX: Implement by rewriting functions above copied from autoresolve.py; search for resolve_strategy_inline_source above in this file """"""",DESIGN,CODE
+"### Technical debt comment: """""" FIXME: A hack that depends on the _0 convention """"""",DEFECT,DESIGN
+"### Technical debt comment: """""" FIXME: can use n_jobs here too """"""",CODE,DESIGN
+"### Technical debt comment: """""" FIXME: don't show \/ """"""",CODE,DESIGN
+"### Technical debt comment: """""" FIXME: Handle execution_count (always change to None?) """"""",DEFECT,DEFECT
+"### Technical debt comment: """""" FIXME: Hardcoded usually sucks """"""",CODE,DESIGN
+"### Technical debt comment: """""" FIXME: how to use tf.image.decode_image instead of decode_jpeg? """"""",CODE,DESIGN
+"### Technical debt comment: """""" FIXME: if we inherit from scipy.io.netcdf.NetCDFFile and omit the self.nc """"""",DEFECT,DESIGN
+"### Technical debt comment: """""" FIXME: INDRA's section_type entry is meant to contain """"""",DESIGN,DESIGN
+"### Technical debt comment: """""" FIXME: move args definition\/parsing inside of main? """"""",DESIGN,DESIGN
+"### Technical debt comment: """""" FIXME: Need to check if mod is the equivalent of floorMod in NumPy """"""",M&T,DEFECT
+"### Technical debt comment: """""" FIXME: Only keeping the first label """"""",DEFECT,DEFECT
+"### Technical debt comment: """""" FIXME: pixel_classes dict needs to be populated with classes obtained from target """"""",DEFECT,DEFECT
+"### Technical debt comment: """""" FIXME: Return type \""None\"" of \""fit\"" incompatible with return type \""float\"" in supertype \""Model\"" """"""",DEFECT,DEFECT
+"### Technical debt comment: """""" FIXME: should 1 be added? the index 0 is the first sample; thus if the """"""",DEFECT,DEFECT
+"### Technical debt comment: """""" FIXME: The code works with EpisodicReplayBuffer """"""",DEFECT,DEFECT
+"### Technical debt comment: """""" FIXME: this is kind of hackish; but being able to simply set """"""",CODE,DESIGN
+"### Technical debt comment: """""" FIXME: to be removed in 0.25 """"""",CODE,DEFECT
+"### Technical debt comment: """""" FIXME: using numpy.roll with a random shift might be faster """"""",CODE,CODE
+"### Technical debt comment: """""" FIXME: What about the next diff entry? """"""",DEFECT,DOCUMENTATION
+"### Technical debt comment: """""" FIXME: What if we never find a fail-high? """"""",DEFECT,DESIGN
+"### Technical debt comment: """""" FIXME: what we do here s basically writing a MIDI format 0 file; """"""",CODE,DEFECT
+"### Technical debt comment: """""" fixme: Why is this function called twice for each @register.tag call in template_tags.py? """"""",CODE,CODE
+"### Technical debt comment: """""" FIXME:the > case """"""",DEFECT,DOCUMENTATION
+"### Technical debt comment: """""" FIXME:we suppose history data should be there at first """"""",DEFECT,DESIGN
+"### Technical debt comment: """""" fixme; we might want to drop dataset that are not compatible """"""",DEFECT,DEFECT
+"### Technical debt comment: """""" FIXME_Numba#5157: remove np.asarray and return as list """"""",CODE,DEFECT
+"### Technical debt comment: """""" fixme-iui  need to use wrapping increment for double or triple buffering: """"""",DEFECT,CODE
+"### Technical debt comment: """""" hack; when inputs have more channels try pulling in only the """"""",CODE,CODE
+"### Technical debt comment: """""" In Python 3; the `list` call is needed to convert the iterator returned by `range` into a list. """"""",CODE,CODE
+"### Technical debt comment: """""" in_dim=(4; 8; 8; 8); # TODO: Needs fix when giving a randon in_dim """"""",DEFECT,CODE
+"### Technical debt comment: """""" Initialize model (TODO: do i really need this?) """"""",CODE,DESIGN
+"### Technical debt comment: """""" It's only needed for a specific purpose in the short term; will go. """"""",CODE,DESIGN
+"### Technical debt comment: """""" kernel as subkernel with a custom propagation matrix. This is a workaround! """"""",CODE,DESIGN
+"### Technical debt comment: """""" Maybe return without target """"""",DESIGN,DEFECT
+"### Technical debt comment: """""" 'nasnet-a_large' : [TensorflowEmit; KerasEmit; PytorchEmit]; # TODO """"""",M&T,DEFECT
+"### Technical debt comment: """""" need the shape TODO """"""",DESIGN,DEFECT
+"### Technical debt comment: """""" needed due to apparent bug in glob2 - removes duplicate entries """"""",DEFECT,DEFECT
+"### Technical debt comment: """""" needed for correct SysEx event handling """"""",CODE,DEFECT
+"### Technical debt comment: """""" Needed for the test_custom_tokenizer is the TestWikiCorpus class. """"""",CODE,M&T
+"### Technical debt comment: """""" Needed to pass ResourceVariable checks. """"""",CODE,DEFECT
+"### Technical debt comment: """""" needed to sklearn comparability """"""",CODE,DEFECT
+"### Technical debt comment: """""" needed to sklearn comparability """"""",CODE,DEFECT
+"### Technical debt comment: """""" needed? """"""",CODE,DEFECT
+"### Technical debt comment: """""" not needed; but why not... """"""",CODE,DESIGN
+"### Technical debt comment: """""" nv by ns dot ns by m -> nv by m  # TODO: Change to CSC for speed? """"""",CODE,CODE
+"### Technical debt comment: """""" Pass on diff to external difftool (TODO: store in global metadata at end instead of in separate diff dicts?) """"""",DESIGN,DESIGN
+"### Technical debt comment: """""" probably not needed; transition """"""",CODE,DESIGN
+"### Technical debt comment: """""" r\""\""\""Run inference on random sequences many times; saving the top results. ||  || This module is designed to run inference on a trained aptamers TF model || to score many sequences and then write out the top scoring sequences to || be used in other analysis. For example; these top predicted sequences || can read in the colab picking sequences in order || to validate the TF model. ||  || This module uses the standard aptamers tensorflow infrastructure to run || the inference. This is the inferer class defined in || learning\/eval_feedforward and described in the Aptamers TensorFlow Doc. ||  || Inference is generally run in batches of sequences; so a MapFlat function || is used to combine the results of interference into a flattened list || of (sequence; score) pairs. (In other words; each map function returns || a list of (sequence; score) pairs and these results are combined into || one list of pairs. Using a standard Map function would result in a || list of lists which is not what we want.) From there; the Top.Of || combiner returns only the top results; sorted by highest score. These || are then written to a text file. ||  || For now; each batch creates its own inferer; causing each map function || to have more overhead. Because of this;batch sizes around the default of || 10000 are performant. Fixing this in the future means converting the || MapFlat to a ParDo and initializing the inferer in start_bundle. || This module runs inference 1 billion times in 50 minutes so it || is sufficient for now ||  || Run locally with: ||  ||   :search_inference -- --flume_exec_mode=UNOPT \\ ||   --target_name='target' \\ ||   --model_dir=xxx \\ ||    --checkpoint_path='model.ckpt-312500' \\ ||    --output_name=xxx\/base30_1B_inference_top2k ||  || \""\""\"" """"""",DESIGN,DEFECT
+"### Technical debt comment: """""" Random Warp # TODO change masks to have a input mask and a warped target mask """"""",CODE,DESIGN
+"### Technical debt comment: """""" seem out of place. If you were able to do better; feel free to share your """"""",DESIGN,DEFECT
+"### Technical debt comment: """""" self._audio = audio.AudioComponent(self) # TODO turn on """"""",CODE,CODE
+"### Technical debt comment: """""" self._view_controller.update(self.robot) # TODO: <- sounds like this has something to do with keyboard input... """"""",DEFECT,CODE
+"### Technical debt comment: """""" self.mpc_sum(3; -5) TODO: Future work: how to handle gracefully minus numbers """"""",M&T,CODE
+"### Technical debt comment: """""" Test covariance calculation XXX add this """"""",M&T,M&T
+"### Technical debt comment: """""" Test for categorical vs. binary in hack-ey way for now... """"""",M&T,M&T
+"### Technical debt comment: """""" tf.train.ProximalAdagradOptimizer todo appears tf.keras.optimizers does not support """"""",DEFECT,DEFECT
+"### Technical debt comment: """""" The dropna() is a workaround for https:\/\/github.com\/pydata\/pandas\/issues\/13098 """"""",CODE,DEFECT
+"### Technical debt comment: """""" The following identity layer is only needed so that subsequent two lambda layers can be optional. """"""",CODE,DESIGN
+"### Technical debt comment: """""" the squeeze is needed to obtain a 1D tensor """"""",CODE,DESIGN
+"### Technical debt comment: """""" The workaround does not support backprop; and also requires external """"""",DESIGN,DEFECT
+"### Technical debt comment: """""" This if statement is needed to guard the cast; because batch norm """"""",CODE,CODE
+"### Technical debt comment: """""" this importing of matplotlib is needed to run on the cluster """"""",CODE,CODE
+"### Technical debt comment: """""" This is a hack to allows inference when the <go> token """"""",CODE,CODE
+"### Technical debt comment: """""" THIS IS A VERY UGLY FUNCTION because it has hardcoded 0\/4\/5 integers for each of the metric. I need to make an enumerated class for this! """"""",CODE,DESIGN
+"### Technical debt comment: """""" This is needed because the pre-activation variant does not have batch """"""",CODE,DEFECT
+"### Technical debt comment: """""" this is needed to update loss history """"""",CODE,DEFECT
+"### Technical debt comment: """""" This is very messy; but it's the minimal working fix to Issue #639. """"""",CODE,CODE
+"### Technical debt comment: """""" TODO """"""",CODE,DEFECT
+"### Technical debt comment: """""" TODO """"""",CODE,DEFECT
+"### Technical debt comment: """""" TODO """"""",CODE,DEFECT
+"### Technical debt comment: """""" TODO - a list of classes would be better eliminating the need for the one """"""",DESIGN,DESIGN
+"### Technical debt comment: """""" TODO - can remove one of these m0 restores if A and B both TLU """"""",M&T,DESIGN
+"### Technical debt comment: """""" TODO - does this handle N-dim tensors correctly? """"""",M&T,DEFECT
+"### Technical debt comment: """""" TODO - refector this function to accept model_name; instance; parent so it makes more sense """"""",DESIGN,DESIGN
+"### Technical debt comment: """""" TODO - timing with beta kernels is somewhat pessimistic since it has this separate event only on the GSU path. """"""",DEFECT,DEFECT
+"### Technical debt comment: """""" TODO (Alex): There's a race condition here if the worker is """"""",DEFECT,CODE
+"### Technical debt comment: """""" TODO (johngiorgi): write tests using a binary format file """"""",M&T,M&T
+"### Technical debt comment: """""" TODO (nakago): test feature extraction behavior... """"""",M&T,M&T
+"### Technical debt comment: """""" TODO (tdomhan): Remove with next major version bump. """"""",CODE,DEFECT
+"### Technical debt comment: """""" TODO : docs and example """"""",DOCUMENTATION,DOCUMENTATION
+"### Technical debt comment: """""" TODO : documentation """"""",DOCUMENTATION,DOCUMENTATION
+"### Technical debt comment: """""" TODO : gt maps are not currently transformed! (need refact w\/ dict keys) """"""",DEFECT,DEFECT
+"### Technical debt comment: """""" TODO : removal """"""",CODE,DEFECT
+"### Technical debt comment: """""" TODO accept_sparse=\""csc\"" """"""",CODE,DEFECT
+"### Technical debt comment: """""" TODO add docstrings """"""",DOCUMENTATION,DOCUMENTATION
+"### Technical debt comment: """""" TODO add more input checks for consistency of X and y """"""",M&T,DEFECT
+"### Technical debt comment: """""" TODO add passing this dictionary to all calls to metrics_helper in this function """"""",DESIGN,DESIGN
+"### Technical debt comment: """""" TODO add test for keypoints once their handling was improved in Convolve """"""",M&T,M&T
+"### Technical debt comment: """""" TODO add test for this """"""",M&T,M&T
+"### Technical debt comment: """""" TODO Add this to other loaders as well. """"""",CODE,DEFECT
+"### Technical debt comment: """""" TODO alpha_mean and density overlap - remove one of them """"""",CODE,DESIGN
+"### Technical debt comment: """""" todo change normalizazion_database to normalise option """"""",CODE,DEFECT
+"### Technical debt comment: """""" TODO change out existing code for better code below """"""",CODE,CODE
+"### Technical debt comment: """""" TODO change random_state to rng """"""",CODE,CODE
+"### Technical debt comment: """""" TODO Change self.phonemes field to self.tgt_labels; and related """"""",CODE,DESIGN
+"### Technical debt comment: """""" TODO change these to class attributes """"""",DESIGN,DESIGN
+"### Technical debt comment: """""" TODO change? """"""",CODE,DEFECT
+"### Technical debt comment: """""" TODO CHECK CORRECTNESS!! """"""",M&T,DEFECT
+"### Technical debt comment: """""" TODO check getStructureCahinIds """"""",M&T,DEFECT
+"### Technical debt comment: """""" TODO check results after standardizing num ft once a ml algorithm is ready to test """"""",M&T,M&T
+"### Technical debt comment: """""" TODO check the start """"""",M&T,DEFECT
+"### Technical debt comment: """""" ToDo consider 3D case --> do that by using tag->size """"""",M&T,DESIGN
+"### Technical debt comment: """""" TODO currently tests only run fit\/predict and compare length of predicted series """"""",M&T,M&T
+"### Technical debt comment: """""" TODO currently we loose the time index; need to add it back to Xt after slicing in time """"""",DEFECT,DEFECT
+"### Technical debt comment: """""" TODO debug """"""",M&T,DEFECT
+"### Technical debt comment: """""" TODO delegate a copy of variable like action_dim to agent too """"""",CODE,CODE
+"### Technical debt comment: """""" TODO design an API interface for advanced access as an importable package """"""",DESIGN,DESIGN
+"### Technical debt comment: """""" TODO DirectedEdgeDetect """"""",M&T,DESIGN
+"### Technical debt comment: """""" TODO ElasticTransformation """"""",M&T,DESIGN
+"### Technical debt comment: """""" TODO epsilon and bias are not really the same; is this a problem? """"""",M&T,DEFECT
+"### Technical debt comment: """""" TODO Figure out a way to handle defaults so that all inputs need not be passed to the """"""",DESIGN,DESIGN
+"### Technical debt comment: """""" TODO hack and set the eval model location inside info_space """"""",CODE,DESIGN
+"### Technical debt comment: """""" TODO init this somewhere else in a more principled way """"""",DESIGN,DESIGN
+"### Technical debt comment: """""" TODO make paf_scored not part of self? """"""",DESIGN,DESIGN
+"### Technical debt comment: """""" TODO Make separate class for it """"""",DESIGN,DESIGN
+"### Technical debt comment: """""" TODO make threshold a variable """"""",CODE,DESIGN
+"### Technical debt comment: """""" TODO maybe improve this so it doesn't use a global """"""",DESIGN,CODE
+"### Technical debt comment: """""" TODO merge with experiment.py """"""",DESIGN,DEFECT
+"### Technical debt comment: """""" TODO move these registrations to backend-specific files """"""",DESIGN,DESIGN
+"### Technical debt comment: """""" TODO named tuple or enum """"""",CODE,DEFECT
+"### Technical debt comment: """""" TODO needed? """"""",CODE,DOCUMENTATION
+"### Technical debt comment: """""" TODO needs testing """"""",M&T,M&T
+"### Technical debt comment: """""" TODO new tests due to new system """"""",M&T,M&T
+"### Technical debt comment: """""" TODO path validation; empty path """"""",M&T,DEFECT
+"### Technical debt comment: """""" TODO Promote this to a Funsor subclass. """"""",DESIGN,DESIGN
+"### Technical debt comment: """""" TODO refactor second part of if statement when implementing live model prediction """"""",CODE,CODE
+"### Technical debt comment: """""" TODO Refactor these two clunky; redundant methods """"""",CODE,CODE
+"### Technical debt comment: """""" TODO refactor to use nltk_lite.probability.FreqDist for self.counts """"""",CODE,CODE
+"### Technical debt comment: """""" TODO remove """"""",CODE,DEFECT
+"### Technical debt comment: """""" TODO Remove """"""",CODE,DEFECT
+"### Technical debt comment: """""" TODO remove later. """"""",CODE,DEFECT
+"### Technical debt comment: """""" TODO Remove target_type """"""",CODE,DEFECT
+"### Technical debt comment: """""" TODO remove this """"""",CODE,DEFECT
+"### Technical debt comment: """""" TODO rename sizes to size? """"""",CODE,DEFECT
+"### Technical debt comment: """""" TODO rename this to \""tokens2indices\"" or something similar. """"""",CODE,DESIGN
+"### Technical debt comment: """""" TODO replace this code with the following commented out code after viz is fixed """"""",CODE,CODE
+"### Technical debt comment: """""" TODO replace whole pandas data container as input argument with separated metadata container """"""",DESIGN,DESIGN
+"### Technical debt comment: """""" TODO see if there is a way to make this test work - it fails on travisCI because of this: """"""",DEFECT,M&T
+"### Technical debt comment: """""" TODO simplify this loop and the ones for heatmaps; keypoints; similar to Alpha """"""",CODE,DESIGN
+"### Technical debt comment: """""" TODO Split into separate functions """"""",DESIGN,CODE
+"### Technical debt comment: """""" todo sweep """"""",CODE,DEFECT
+"### Technical debt comment: """""" TODO switch similar statements to work inplace (w\/o making a copy) """"""",CODE,DESIGN
+"### Technical debt comment: """""" TODO test more formats for ligand """"""",M&T,M&T
+"### Technical debt comment: """""" TODO test more formats for ligand """"""",M&T,M&T
+"### Technical debt comment: """""" TODO test nestedness """"""",M&T,M&T
+"### Technical debt comment: """""" TODO this combo doens't work """"""",DEFECT,DEFECT
+"### Technical debt comment: """""" TODO this error message needs changing. """"""",DEFECT,DEFECT
+"### Technical debt comment: """""" TODO this is wrong for other entitiey types nor appearing in the edge """"""",DEFECT,DEFECT
+"### Technical debt comment: """""" TODO this will fail if a parameter cant handle size=(N;) """"""",DEFECT,DEFECT
+"### Technical debt comment: """""" TODO to be modified """"""",CODE,DEFECT
+"### Technical debt comment: """""" TODO Traceback \""ResourceWarning: unclosed filecodeDecodeError: 'ascii' codec can't decode byte 0xc3 in position 25: ordinal not in range(128)\"" """"""",DEFECT,DEFECT
+"### Technical debt comment: """""" todo try: \"" \"".join(foo.split()) """"""",CODE,CODE
+"### Technical debt comment: """""" TODO unify this somehow with the global _handle_mode_arg() that is """"""",DESIGN,CODE
+"### Technical debt comment: """""" todo unit tests """"""",M&T,M&T
+"### Technical debt comment: """""" TODO Update and move now this isn't used here """"""",DESIGN,DEFECT
+"### Technical debt comment: """""" TODO update doc above """"""",DOCUMENTATION,DOCUMENTATION
+"### Technical debt comment: """""" TODO update these - the sklearn transformation class should be able """"""",CODE,DEFECT
+"### Technical debt comment: """""" TODO use pop """"""",CODE,DEFECT
+"### Technical debt comment: """""" TODO validation_split is not used """"""",CODE,DEFECT
+"### Technical debt comment: """""" TODO we need to enable the test later. """"""",M&T,M&T
+"### Technical debt comment: """""" TODO write a warning """"""",DEFECT,DEFECT
+"### Technical debt comment: """""" TODO(ahundt) consider removing this dependency """"""",CODE,DEFECT
+"### Technical debt comment: """""" TODO(ahundt) MOVE THE CODE ABOVE INTO _get_simple_parallel_dataset_ops() """"""",DESIGN,CODE
+"### Technical debt comment: """""" TODO(beam2d): Fix after supporting correct dtype promotion. """"""",CODE,DEFECT
+"### Technical debt comment: """""" TODO(fstahlberg): Move to config """"""",DESIGN,DESIGN
+"### Technical debt comment: """""" TODO(levskaya): refactor to use newer RL friendly parameter passing. """"""",CODE,DESIGN
+"### Technical debt comment: """""" TODO(priyag): Fix eval step hook to account for steps_per_run. """"""",DEFECT,DEFECT
+"### Technical debt comment: """""" TODO(sven): Add once ModelV1 is deprecated and we no longer cause circular """"""",CODE,DEFECT
+"### Technical debt comment: """""" TODO(sxjscience) Consider to combine the NamedTuple and batchify functionality. """"""",DESIGN,DESIGN
+"### Technical debt comment: """""" TODO(vsatish): Figure out why this isn't printed. """"""",DEFECT,DEFECT
+"### Technical debt comment: """""" TODO(wakisaka): move to somewhere. """"""",DESIGN,DEFECT
+"### Technical debt comment: """""" TODO. create README file in <output_dir> """"""",DOCUMENTATION,DOCUMENTATION
+"### Technical debt comment: """""" TODO. Make this a private method. """"""",DESIGN,DESIGN
+"### Technical debt comment: """""" TODO. Move ignored entities into core. """"""",DESIGN,DESIGN
+"### Technical debt comment: """""" TODO: """"""",DESIGN,DEFECT
+"### Technical debt comment: """""" TODO: """"""",DESIGN,DEFECT
+"### Technical debt comment: """""" TODO: """"""",CODE,DEFECT
+"### Technical debt comment: """""" TODO: """"""",M&T,DEFECT
+"### Technical debt comment: """""" TODO:   2014-07-10 16:38:27 by Brian McFee <brm2132@columbia.edu> """"""",DESIGN,DOCUMENTATION
+"### Technical debt comment: """""" TODO: (sven) rename to simply stats_fn to match eager and torch. """"""",CODE,DESIGN
+"### Technical debt comment: """""" todo: accurate Value """"""",DEFECT,DEFECT
+"### Technical debt comment: """""" TODO: Add a test for ignore_sep=False """"""",M&T,M&T
+"### Technical debt comment: """""" TODO: add inheritance from Graph once implemented """"""",DESIGN,DESIGN
+"### Technical debt comment: """""" TODO: add set-name (or rename); delete subcommands """"""",CODE,CODE
+"### Technical debt comment: """""" TODO: Add this to configuration framework """"""",DESIGN,DESIGN
+"### Technical debt comment: """""" TODO: Add toggle for the LSUV init. It seems not always better! """"""",DEFECT,DESIGN
+"### Technical debt comment: """""" TODO: arbitrary threshold is problematic """"""",CODE,DEFECT
+"### Technical debt comment: """""" TODO: assertWarns exist only for Python 3.2+; test in all versions """"""",M&T,M&T
+"### Technical debt comment: """""" TODO: avoid reduce for obvious cases like no center and large 1D_Block """"""",CODE,DESIGN
+"### Technical debt comment: """""" TODO: Bad hack to work around generic types in pydantic (until next release) """"""",DEFECT,CODE
+"### Technical debt comment: """""" TODO: Basically identical to `test_intra_cv_target_transform` except for repeated KFold """"""",CODE,M&T
+"### Technical debt comment: """""" TODO: batch might have different sequence lengths """"""",M&T,DESIGN
+"### Technical debt comment: """""" TODO: behavior is unchanged. Could be improved. """"""",M&T,DESIGN
+"### Technical debt comment: """""" TODO: Break the graph only nGPU times instead of nb_iter times. """"""",CODE,DESIGN
+"### Technical debt comment: """""" TODO: but seriously; we need to fix it! """"""",CODE,DEFECT
+"### Technical debt comment: """""" TODO: Can this be moved up? """"""",DESIGN,DESIGN
+"### Technical debt comment: """""" todo: change the feature_na_method! """"""",CODE,DEFECT
+"### Technical debt comment: """""" TODO: Change the optimizer to the appropriate Optimizer class """"""",CODE,DESIGN
+"### Technical debt comment: """""" TODO: Change this to finite = True """"""",CODE,DESIGN
+"### Technical debt comment: """""" TODO: check `other` is Series after a circular import of SeriesType fixed """"""",M&T,DEFECT
+"### Technical debt comment: """""" TODO: Check behavior if this is a single mrc file (no '@') """"""",M&T,DEFECT
+"### Technical debt comment: """""" TODO: check CAPTALIZED WORDS as their lower case counterparts before saving """"""",M&T,DEFECT
+"### Technical debt comment: """""" TODO: Check exp map params """"""",M&T,DEFECT
+"### Technical debt comment: """""" TODO: check for errors """"""",DEFECT,M&T
+"### Technical debt comment: """""" TODO: Check if self._mean_squared_error_w_precision can be used here """"""",M&T,DEFECT
+"### Technical debt comment: """""" TODO: check if stride of 2 causes alignment issues if the featuremap """"""",DEFECT,DESIGN
+"### Technical debt comment: """""" TODO: check whether the model is QuartzNet """"""",M&T,DEFECT
+"### Technical debt comment: """""" TODO: clean up these initialization """"""",CODE,CODE
+"### Technical debt comment: """""" TODO: CntkEmit """"""",M&T,DEFECT
+"### Technical debt comment: """""" TODO: compare the performance! """"""",M&T,DEFECT
+"### Technical debt comment: """""" TODO: config should only be loaded once (also in database.py and enter_data.py) """"""",CODE,DESIGN
+"### Technical debt comment: """""" TODO: consider more granular OS release extraction """"""",DEFECT,DESIGN
+"### Technical debt comment: """""" TODO: Contribute these to MXNet?  For now it appears that registered activation types must be implemented in C++. """"""",DESIGN,DESIGN
+"### Technical debt comment: """""" TODO: Could be implemented as optimization option in LK??? """"""",DESIGN,DESIGN
+"### Technical debt comment: """""" TODO: Currently this turns any upregulation associated with """"""",DESIGN,DESIGN
+"### Technical debt comment: """""" TO-DO: currently uses train datatset """"""",CODE,DESIGN
+"### Technical debt comment: """""" TODO: Debug defaults. """"""",DEFECT,DEFECT
+"### Technical debt comment: """""" TODO: Decide on whether to keep this; could just pass to plot_lr_finders """"""",DESIGN,DESIGN
+"### Technical debt comment: """""" TODO: decorator params: parallelization (e.g. threads; processes; async\/await; greenlets;...) """"""",DESIGN,DESIGN
+"### Technical debt comment: """""" TODO: decouple DDP from SLURM """"""",DESIGN,DESIGN
+"### Technical debt comment: """""" TODO: delete this method when no longer needed """"""",CODE,CODE
+"### Technical debt comment: """""" TODO: deprecate? """"""",CODE,DEFECT
+"### Technical debt comment: """""" TODO: do not replace unless explicitly noticed + add 'only hangul' option """"""",CODE,DESIGN
+"### Technical debt comment: """""" TODO: do some evaluation. """"""",M&T,DEFECT
+"### Technical debt comment: """""" TODO: do we need this?! """"""",CODE,DEFECT
+"### Technical debt comment: """""" TODO: docstring """"""",DOCUMENTATION,DOCUMENTATION
+"### Technical debt comment: """""" TODO: don't need this w\/ py.test """"""",M&T,M&T
+"### Technical debt comment: """""" TODO: double check if this is still true in 1.9.0 """"""",M&T,DEFECT
+"### Technical debt comment: """""" TODO: dtype """"""",CODE,DEFECT
+"### Technical debt comment: """""" todo: enable the following line instead once the """"""",CODE,DEFECT
+"### Technical debt comment: """""" TODO: ensure dummy_na =False is what you want """"""",M&T,DEFECT
+"### Technical debt comment: """""" TODO: ensure x data shape matches model._ph['x'] shape (only if fit) """"""",DEFECT,DESIGN
+"### Technical debt comment: """""" TODO: EXPAND PROPER NOUNS FOR COMMON WORDS AROUND WORD """"""",CODE,DESIGN
+"### Technical debt comment: """""" TODO: experiment with more layers """"""",M&T,DESIGN
+"### Technical debt comment: """""" TODO: figure out how why the result of einsum requires reshape """"""",M&T,DEFECT
+"### Technical debt comment: """""" TODO: figure out while empty documents are being returned """"""",DEFECT,DEFECT
+"### Technical debt comment: """""" TODO: figure out why this happens. """"""",DEFECT,DEFECT
+"### Technical debt comment: """""" TODO: fix estimator check for AutoEncoder """"""",DEFECT,DEFECT
+"### Technical debt comment: """""" TODO: fix read whole wiki """"""",DEFECT,DOCUMENTATION
+"### Technical debt comment: """""" TODO: fix this later """"""",DEFECT,DEFECT
+"### Technical debt comment: """""" TODO: Get rid of this """"""",CODE,DEFECT
+"### Technical debt comment: """""" TODO: handle arg tuples """"""",M&T,CODE
+"### Technical debt comment: """""" TODO: handle Nones """"""",DEFECT,DEFECT
+"### Technical debt comment: """""" TODO: handle record value which are lists; at least error """"""",DEFECT,DEFECT
+"### Technical debt comment: """""" TODO: hard coded for now; looking for better extraction methods """"""",CODE,DESIGN
+"### Technical debt comment: """""" TODO: here; and every time we use this 999 number; find a cleaner\/better way """"""",DESIGN,DEFECT
+"### Technical debt comment: """""" TODO: I believe this is not really much used """"""",CODE,DESIGN
+"### Technical debt comment: """""" TODO: I can't manage the import issue; can you? """"""",DEFECT,DEFECT
+"### Technical debt comment: """""" TODO: I'm not sure about this part """"""",CODE,DESIGN
+"### Technical debt comment: """""" TODO: Implement get_owners and refactor to make it prettier """"""",CODE,CODE
+"### Technical debt comment: """""" TODO: implement test_to_set_fw_dic() test code """"""",M&T,M&T
+"### Technical debt comment: """""" TODO: Important because of this any time the child """"""",CODE,DEFECT
+"### Technical debt comment: """""" TODO: In terms of functional API; there should not be any initialization of an nn.Module. """"""",CODE,DESIGN
+"### Technical debt comment: """""" TODO: Indexing not thoroughly tested """"""",M&T,M&T
+"### Technical debt comment: """""" TODO: inline freevar """"""",M&T,CODE
+"### Technical debt comment: """""" TODO: Instead of self.cpu(); use is_cuda to know if you can use gpu """"""",CODE,CODE
+"### Technical debt comment: """""" TODO: it is a blocking call """"""",M&T,CODE
+"### Technical debt comment: """""" TODO: it's worth to switch back to the correct preprocess_input when InceptionResNetV2 model is re-trained """"""",CODE,DEFECT
+"### Technical debt comment: """""" TODO: make fast_rcnn irrelevant """"""",CODE,DESIGN
+"### Technical debt comment: """""" TODO: Make the below safe to div by zero """"""",DEFECT,CODE
+"### Technical debt comment: """""" TODO: make the dtype configurable; see __init__() """"""",DESIGN,DESIGN
+"### Technical debt comment: """""" TODO: make this exception more specific """"""",DEFECT,DESIGN
+"### Technical debt comment: """""" TODO: make this work with col names shorter than three letters """"""",DEFECT,DESIGN
+"### Technical debt comment: """""" TODO: maybe add testStepTrain (and possibly some other tests) from dopamine """"""",M&T,M&T
+"### Technical debt comment: """""" TODO: maybe refactor this """"""",CODE,CODE
+"### Technical debt comment: """""" TODO: message about vector lengths? """"""",DOCUMENTATION,DEFECT
+"### Technical debt comment: """""" Todo: mock nb Gpus so all these tests can run on any device """"""",CODE,M&T
+"### Technical debt comment: """""" TODO: modify this later """"""",CODE,DESIGN
+"### Technical debt comment: """""" todo: more flexible signature? """"""",DESIGN,DESIGN
+"### Technical debt comment: """""" TODO: more validation """"""",M&T,DEFECT
+"### Technical debt comment: """""" TODO: move this to corpus module """"""",DESIGN,DEFECT
+"### Technical debt comment: """""" TODO: need a better way """"""",CODE,DESIGN
+"### Technical debt comment: """""" TODO: need to change this function to allow plotting. """"""",CODE,DESIGN
+"### Technical debt comment: """""" TODO: Need to defing a dynamic pipeline """"""",DESIGN,DESIGN
+"### Technical debt comment: """""" TODO: needs to be re-written to match new stitch datasets signature. """"""",CODE,DESIGN
+"### Technical debt comment: """""" TODO: NOT PASSED """"""",DEFECT,DEFECT
+"### Technical debt comment: """""" TODO: Not test yet; check behavior """"""",M&T,M&T
+"### Technical debt comment: """""" TODO: num pad examples is not set here if fillup policy would be padding """"""",DEFECT,DEFECT
+"### Technical debt comment: """""" TODO: num pad examples is not set here if fillup strategy would be padding """"""",DOCUMENTATION,DEFECT
+"### Technical debt comment: """""" TODO: off by one ... you fool george; sort this out """"""",M&T,DEFECT
+"### Technical debt comment: """""" TODO: pass in just the id instead of the entire obj_msg. """"""",DESIGN,CODE
+"### Technical debt comment: """""" TODO: Place tensors into GPU memory. This will require rewriting """"""",DESIGN,CODE
+"### Technical debt comment: """""" TODO: pretty sure this isn't necessary """"""",CODE,DESIGN
+"### Technical debt comment: """""" TODO: Probably should just implement __deepcopy__ """"""",DESIGN,DEFECT
+"### Technical debt comment: """""" TODO: Push update to MXNet to expose the optimizer (Module should have a get_optimizer method) """"""",DESIGN,DEFECT
+"### Technical debt comment: """""" TODO: raise error in 1.1 instead """"""",DEFECT,DEFECT
+"### Technical debt comment: """""" TODO: Read this 10000 from the datasets """"""",CODE,DEFECT
+"### Technical debt comment: """""" TODO: refactor as independent function """"""",DESIGN,CODE
+"### Technical debt comment: """""" TODO: Refactor\/simplify Configuration class so it can be used in cases """"""",DESIGN,DESIGN
+"### Technical debt comment: """""" TODO: refine """"""",CODE,DESIGN
+"### Technical debt comment: """""" TODO: Remove corruption entities """"""",CODE,DEFECT
+"### Technical debt comment: """""" TODO: remove dummy \/ debug tasks """"""",CODE,DEFECT
+"### Technical debt comment: """""" TODO: remove hard-coded sizes and make relative to parent? """"""",CODE,DESIGN
+"### Technical debt comment: """""" TODO: Remove hardcoding of downscaling calculations. """"""",CODE,DESIGN
+"### Technical debt comment: """""" TODO: Remove in 0.26 when the _pairwise attribute is removed """"""",CODE,DEFECT
+"### Technical debt comment: """""" TODO: Remove in 1.2 """"""",CODE,DEFECT
+"### Technical debt comment: """""" TODO: Remove in v1.2 """"""",CODE,DEFECT
+"### Technical debt comment: """""" TODO: remove logging and actually test values """"""",M&T,M&T
+"### Technical debt comment: """""" TODO: Remove this blocker once batch transfer to device is integrated in Lightning for DP mode. """"""",CODE,DEFECT
+"### Technical debt comment: """""" TODO: remove this check once the estimator is no longer experimental. """"""",CODE,DESIGN
+"### Technical debt comment: """""" TODO: remove this method in v1.3.0. """"""",CODE,CODE
+"### Technical debt comment: """""" TODO: remove this when we drop Python 2 support (functools.wraps """"""",CODE,DEFECT
+"### Technical debt comment: """""" TODO: remove timestamp_series_type """"""",CODE,DESIGN
+"### Technical debt comment: """""" TODO: remove when dict results are deprecated """"""",CODE,DEFECT
+"### Technical debt comment: """""" TODO: rename function to assemble_filterbank()? """"""",CODE,DESIGN
+"### Technical debt comment: """""" TODO: rename kwarg \""forward\"" to \""forward_additive\"" """"""",CODE,DESIGN
+"### Technical debt comment: """""" TODO: rename split_index -> split_indices + change in RL repo """"""",CODE,CODE
+"### Technical debt comment: """""" TODO: Rename the module to something that does not conflict with stdlib """"""",CODE,DEFECT
+"### Technical debt comment: """""" TODO: Repeat_elements and tf.split doesn't support dynamic splits. """"""",DEFECT,DEFECT
+"### Technical debt comment: """""" TODO: replace init=None by init='auto' in v0.6.0 and remove the warning """"""",CODE,CODE
+"### Technical debt comment: """""" TODO: Replace Lambda with custom Keras layer for loss. """"""",DESIGN,DESIGN
+"### Technical debt comment: """""" TODO: replace this with MTTask """"""",CODE,M&T
+"### Technical debt comment: """""" TODO: Replace when space in db """"""",M&T,DEFECT
+"### Technical debt comment: """""" TODO: replace with (stable) Draft6Validator; if available """"""",CODE,DEFECT
+"### Technical debt comment: """""" TODO: replace with below line when Numba supports np.isin in nopython mode """"""",CODE,DEFECT
+"### Technical debt comment: """""" TODO: replace with unbatch or readout """"""",CODE,DESIGN
+"### Technical debt comment: """""" TODO: result_dict contains batches of images; while """"""",DEFECT,CODE
+"### Technical debt comment: """""" TODO: rotated_grids might as well give us correctly shaped array in the first place """"""",DEFECT,DESIGN
+"### Technical debt comment: """""" TODO: separate this into two different inputs to test that """"""",M&T,M&T
+"### Technical debt comment: """""" TODO: set check_hash to True on final model """"""",M&T,CODE
+"### Technical debt comment: """""" TODO: set other defaults than those in cp.audio.filterbank for MFCCs? """"""",CODE,DESIGN
+"### Technical debt comment: """""" TODO: Should this be called self.network for continuity? """"""",CODE,DESIGN
+"### Technical debt comment: """""" TODO: Simplify following line once using multivariate base distributions for multivariate flows """"""",CODE,DESIGN
+"### Technical debt comment: """""" TODO: skip on error??? """"""",DEFECT,DEFECT
+"### Technical debt comment: """""" TODO: specifiy if the geometry should be set relative to the """"""",DOCUMENTATION,DESIGN
+"### Technical debt comment: """""" TODO: standardize `_offset` vs `offset` naming convention """"""",CODE,CODE
+"### Technical debt comment: """""" TODO: start and end logits (TypeError: Object of type 'Tensor' is not JSON serializable) """"""",DEFECT,DEFECT
+"### Technical debt comment: """""" TODO: store something cleaner """"""",CODE,DEFECT
+"### Technical debt comment: """""" TODO: support more backbone """"""",DESIGN,DESIGN
+"### Technical debt comment: """""" TODO: Test """"""",M&T,M&T
+"### Technical debt comment: """""" TODO: Test buy to close option trades """"""",M&T,M&T
+"### Technical debt comment: """""" TODO: test that examples are executed after a no-plot and produce """"""",M&T,M&T
+"### Technical debt comment: """""" TODO: test that rebuilding multiple times works properly """"""",M&T,M&T
+"### Technical debt comment: """""" TODO: test this """"""",M&T,M&T
+"### Technical debt comment: """""" TODO: The \""\"" choice can be removed when all users have been updated to pass a correct phabricator_deployment. """"""",CODE,DEFECT
+"### Technical debt comment: """""" TODO: the old setup is now called \""pre_training\""; where should this hook be called now? """"""",CODE,DEFECT
+"### Technical debt comment: """""" TODO: the y_train should be given us externally; so far we create it as random values """"""",DESIGN,DESIGN
+"### Technical debt comment: """""" TODO: This branch happens when there's only one content word """"""",M&T,DESIGN
+"### Technical debt comment: """""" TODO: This breaks layer sharing. Does it matter for this class? """"""",DEFECT,DEFECT
+"### Technical debt comment: """""" TODO: this can only be removed once the implementations of word_dropout and locked_dropout have a batch_first mode """"""",CODE,DEFECT
+"### Technical debt comment: """""" TODO: this flag is somewhat redundant given the flag above; need """"""",CODE,DEFECT
+"### Technical debt comment: """""" TODO: This is discarding phase. Is that ok? """"""",DEFECT,DEFECT
+"### Technical debt comment: """""" TODO: this is ugly; we put all the initialization work in this method; because initialization relies """"""",DESIGN,CODE
+"### Technical debt comment: """""" TODO: This method pulls in all the implementation dependencies into """"""",DESIGN,DESIGN
+"### Technical debt comment: """""" TODO: This might not be called corpora """"""",CODE,DESIGN
+"### Technical debt comment: """""" TODO: This might not work with numpy types; haven't checked - AD """"""",M&T,DEFECT
+"### Technical debt comment: """""" TODO: This needs to be enforced to something more specific """"""",M&T,DESIGN
+"### Technical debt comment: """""" TODO: This next code is dense and confusing. Clean up at some point. """"""",CODE,CODE
+"### Technical debt comment: """""" TODO: This we can change easily to functional style """"""",DESIGN,DESIGN
+"### Technical debt comment: """""" TODO: to be tested """"""",M&T,M&T
+"### Technical debt comment: """""" TODO: tree should't need this in this case """"""",CODE,DEFECT
+"### Technical debt comment: """""" TODO: turn off performance check before a better data generation """"""",CODE,DEFECT
+"### Technical debt comment: """""" TODO: unify look_aside with CRFBeatDetection's interval_sigma """"""",DESIGN,CODE
+"### Technical debt comment: """""" TODO: unroll\/roll are great candidates for a context manager since they're always used in conjunction. """"""",CODE,DESIGN
+"### Technical debt comment: """""" todo: use Input and Output classes to handle inputs and outputs """"""",DESIGN,DESIGN
+"### Technical debt comment: """""" TODO: Use the copy function """"""",CODE,DEFECT
+"### Technical debt comment: """""" TODO: verifier tests """"""",M&T,M&T
+"### Technical debt comment: """""" TODO: verify if it is working """"""",M&T,M&T
+"### Technical debt comment: """""" TODO: want to call it activation but namespace; so what to do best? """"""",CODE,DESIGN
+"### Technical debt comment: """""" TODO: we currently exploit a bug in the implementation of unravel_index to not require knowing the first shape """"""",DEFECT,DEFECT
+"### Technical debt comment: """""" TODO: we really should be more intelligent about this """"""",CODE,DESIGN
+"### Technical debt comment: """""" TODO: We shouldn't be getting these malformed inputs. Fix this. """"""",DEFECT,DEFECT
+"### Technical debt comment: """""" TODO: Why does this handle the 0 case the opposite of others? """"""",DEFECT,CODE
+"### Technical debt comment: """""" TODO: would be good to add ref from source """"""",CODE,DOCUMENTATION
+"### Technical debt comment: """""" TODO: wrap this properly in a with session_context(): """"""",CODE,DESIGN
+"### Technical debt comment: """""" TODO: write a function to do this.. """"""",DESIGN,CODE
+"### Technical debt comment: """""" TODO: Write more tests! """"""",M&T,M&T
+"### Technical debt comment: """""" TODO: write out a few visualizations """"""",M&T,DESIGN
+"### Technical debt comment: """""" TODO: Write tests """"""",M&T,M&T
+"### Technical debt comment: """""" TODO: Write tests for all treebanks """"""",M&T,M&T
+"### Technical debt comment: """""" TODO: x;y input should be able to be np arrays; pandas arrays; or tf dataset iterators """"""",DESIGN,DESIGN
+"### Technical debt comment: """""" TODO; make nicer """"""",CODE,DESIGN
+"### Technical debt comment: """""" todo; pass also best score """"""",DESIGN,DEFECT
+"### Technical debt comment: """""" TODO? warn if not matching extras already present? """"""",DEFECT,DEFECT
+"### Technical debt comment: """""" Trying to fetch a HTML file TODO: """"""",CODE,DEFECT
+"### Technical debt comment: """""" unused """"""",CODE,DEFECT
+"### Technical debt comment: """""" Unused """"""",CODE,DEFECT
+"### Technical debt comment: """""" Warning\/error checking needed for Reshape if channels axis split """"""",DEFECT,CODE
+"### Technical debt comment: """""" workaround for bugs.python.org\/issue11159 """"""",CODE,DEFECT
+"### Technical debt comment: """""" Workaround for GH #17886 (unnecessarily casts to float): """"""",CODE,DEFECT
+"### Technical debt comment: """""" workaround for python 2.6 """"""",CODE,DEFECT
+"### Technical debt comment: """""" Workaround NumPy 1.9 issue. """"""",CODE,DEFECT
+"### Technical debt comment: """""" XXX : can do better to avoid precision overflows """"""",DEFECT,CODE
+"### Technical debt comment: """""" XXX add more info """"""",DOCUMENTATION,DOCUMENTATION
+"### Technical debt comment: """""" XXX both work """"""",CODE,DEFECT
+"### Technical debt comment: """""" XXX Convert the baseline to a Foreign clause. """"""",DESIGN,DESIGN
+"### Technical debt comment: """""" XXX copy_() ? """"""",CODE,CODE
+"### Technical debt comment: """""" XXX copy_() ? """"""",CODE,CODE
+"### Technical debt comment: """""" XXX de-duplicate this with code from Montage somewhere? """"""",DESIGN,CODE
+"### Technical debt comment: """""" XXX Default number of samples drawn from my arse. """"""",CODE,DEFECT
+"### Technical debt comment: """""" XXX Disable SimulateModels without CreateTab """"""",CODE,DESIGN
+"### Technical debt comment: """""" XXX Expose this API better from bqlfn. """"""",DESIGN,DESIGN
+"### Technical debt comment: """""" XXX gs = fig.add_gridspec(15; 1) """"""",CODE,CODE
+"### Technical debt comment: """""" XXX in theory we should set inv['source_cov'] properly. """"""",DEFECT,DEFECT
+"### Technical debt comment: """""" XXX JRK: Should this test whether test_times if a DecodingTime """"""",M&T,DEFECT
+"### Technical debt comment: """""" XXX may convert to set here when we can rely on set being builtin """"""",CODE,DESIGN
+"### Technical debt comment: """""" XXX might possibly be slow solution; but every worker needs reseted LDA model for every iteration """"""",DEFECT,DESIGN
+"### Technical debt comment: """""" XXX MPL. Probably needs a refactor of plot_sensors() to work cleanly """"""",DESIGN,CODE
+"### Technical debt comment: """""" XXX newer versions of SciPy have scipy.sparse.rand for this. """"""",CODE,DESIGN
+"### Technical debt comment: """""" XXX pandas only accepts variable window cov\/corr """"""",DEFECT,DESIGN
+"### Technical debt comment: """""" XXX Refactor to calculate the Rician SNR: """"""",CODE,DESIGN
+"### Technical debt comment: """""" XXX Remove """"""",CODE,DEFECT
+"### Technical debt comment: """""" XXX this fails: or n_pca_components == 8: """"""",DEFECT,DEFECT
+"### Technical debt comment: """""" XXX when it's refactored; Report._render_raw will need to be updated """"""",CODE,DEFECT
+"### Technical debt comment: """""" XXX when matplotlib 3.3 is min version; replace this with """"""",CODE,DEFECT
+"### Technical debt comment: """""" XXX: Check why only 2 digits """"""",M&T,DEFECT
+"### Technical debt comment: """""" XXX: code for timestamp series getitem in regular Numba """"""",CODE,CODE
+"### Technical debt comment: """""" XXX: currently scaled to variance=n_samples """"""",CODE,DESIGN
+"### Technical debt comment: """""" XXX: don't know which way would be the best """"""",CODE,DESIGN
+"### Technical debt comment: """""" XXX: hack; don't ask why """"""",CODE,CODE
+"### Technical debt comment: """""" XXX: one could be smarter here """"""",CODE,DESIGN
+"### Technical debt comment: """""" XXX: should we rather test if instance of estimator? """"""",M&T,M&T
+"### Technical debt comment: """""" XXX: Temporary solution to figure out if an estimator is a classifier """"""",CODE,DESIGN
+"### Technical debt comment: """""" XXX: This conflicts with the debug flag used in children class """"""",DESIGN,DEFECT
+"### Technical debt comment: """""" XXX: This is going to fail if the init is a staticmethod; but """"""",DESIGN,CODE
+"### Technical debt comment: """""" XXX: Ugly """"""",CODE,DESIGN
+"### Technical debt comment: """""" XXX: using .values to check date type since DatetimeIndex returns """"""",CODE,DEFECT

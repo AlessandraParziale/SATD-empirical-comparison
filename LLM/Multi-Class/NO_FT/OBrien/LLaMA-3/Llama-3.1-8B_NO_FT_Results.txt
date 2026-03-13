@@ -1,0 +1,23 @@
+Evaluation:
+
+               precision    recall  f1-score   support
+
+         CODE      0.499     0.870     0.634       207
+          M&T      0.464     0.155     0.232        84
+       DEFECT      0.659     0.329     0.439        82
+       DESIGN      0.308     0.100     0.151        80
+DOCUMENTATION      0.417     0.333     0.370        15
+
+     accuracy                          0.498       468
+    macro avg      0.469     0.357     0.365       468
+ weighted avg      0.485     0.498     0.437       468
+
+              CODE          M&T           DEFECT        DESIGN        DOCUMENTATION
+CODE          180           8             7             11            1            
+M&T           65            13            5             1             0            
+DEFECT        43            3             27            5             4            
+DESIGN        64            4             2             8             2            
+DOCUMENTATION 9             0             0             1             5            
+
+
+Number of unrecognized predictions: 233

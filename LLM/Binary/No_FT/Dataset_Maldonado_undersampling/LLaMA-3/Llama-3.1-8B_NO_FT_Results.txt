@@ -1,0 +1,19 @@
+Dataset: maldonado_undersampled.csv
+Model: meta-llama/Llama-3.1-8B-Instruct
+Prompt: MAT (TODO/FIXME/HACK/XXX), task-level (no examples)
+Evaluation: whole dataset (no split)
+
+              precision    recall  f1-score   support
+
+    Not-SATD      0.862     0.606     0.711      4497
+        SATD      0.696     0.903     0.786      4497
+
+    accuracy                          0.754      8994
+   macro avg      0.779     0.754     0.749      8994
+weighted avg      0.779     0.754     0.749      8994
+
+         Not-SATD SATD    
+Not-SATD 2723     1774    
+SATD     436      4061    
+
+

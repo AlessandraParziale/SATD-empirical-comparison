@@ -1,0 +1,18 @@
+Dataset: maldonado_undersampled.csv
+Model: google/flan-t5-xl
+Prompt: MAT (TODO/FIXME/HACK/XXX), task-level (no examples)
+Evaluation: whole dataset (no split)
+
+              precision    recall  f1-score   support
+
+    Not-SATD      0.638     0.998     0.778      4497
+        SATD      0.996     0.433     0.603      4497
+
+    accuracy                          0.715      8994
+   macro avg      0.817     0.715     0.691      8994
+weighted avg      0.817     0.715     0.691      8994
+
+         Not-SATD SATD    
+Not-SATD 4490     7       
+SATD     2552     1945    
+

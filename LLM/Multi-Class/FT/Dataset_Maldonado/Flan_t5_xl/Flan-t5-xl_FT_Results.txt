@@ -1,0 +1,20 @@
+[TEST] classification_report
+                precision    recall  f1-score   support
+
+IMPLEMENTATION      0.781     0.658     0.714       152
+          TEST      0.800     0.706     0.750        17
+        DEFECT      0.663     0.628     0.645        94
+        DESIGN      0.864     0.913     0.888       541
+ DOCUMENTATION      0.727     0.727     0.727        11
+
+      accuracy                          0.826       815
+     macro avg      0.767     0.726     0.745       815
+  weighted avg      0.822     0.826     0.822       815
+
+
+[TEST] confusion_matrix (rows=true, cols=pred)
+[[100   0   7  45   0]
+ [  2  12   1   2   0]
+ [  2   2  59  29   2]
+ [ 23   1  22 494   1]
+ [  1   0   0   2   8]]

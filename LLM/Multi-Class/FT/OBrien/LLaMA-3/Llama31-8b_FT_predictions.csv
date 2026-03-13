@@ -1,0 +1,1129 @@
+text,true,pred
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" TODO: make this exception more specific """"""",DEFECT,DESIGN
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" TODO needed? """"""",CODE,CODE
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" TODO: rotated_grids might as well give us correctly shaped array in the first place """"""",DEFECT,CODE
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" all games are zero sum that are trained and because 2 values; x2 the error.  XXX """"""",DEFECT,CODE
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" FIXME This will make sense when all controllers are in one file (like task.py) """"""",DESIGN,DESIGN
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" TODO: Need to defing a dynamic pipeline """"""",DESIGN,DESIGN
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" TODO: to be tested """"""",M&T,M&T
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" TODO: batch might have different sequence lengths """"""",M&T,CODE
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" TODO add passing this dictionary to all calls to metrics_helper in this function """"""",DESIGN,DESIGN
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" TODO: implement test_to_set_fw_dic() test code """"""",M&T,M&T
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" TODO: Test buy to close option trades """"""",M&T,M&T
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" FIXME: The code works with EpisodicReplayBuffer """"""",DEFECT,DEFECT
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" TODO: I can't manage the import issue; can you? """"""",DEFECT,CODE
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" TODO """"""",CODE,CODE
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" TODO - does this handle N-dim tensors correctly? """"""",M&T,M&T
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" TODO: Refactor\/simplify Configuration class so it can be used in cases """"""",DESIGN,DESIGN
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" TODO: dtype """"""",CODE,M&T
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" TODO: rename function to assemble_filterbank()? """"""",CODE,CODE
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" XXX Default number of samples drawn from my arse. """"""",CODE,CODE
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" TODO: avoid reduce for obvious cases like no center and large 1D_Block """"""",CODE,CODE
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" TODO: Probably should just implement __deepcopy__ """"""",DESIGN,DESIGN
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" TODO DirectedEdgeDetect """"""",M&T,CODE
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" This if statement is needed to guard the cast; because batch norm """"""",CODE,CODE
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" TODO: (sven) rename to simply stats_fn to match eager and torch. """"""",CODE,CODE
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" This is a hack to allows inference when the <go> token """"""",CODE,CODE
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" TODO: This might not be called corpora """"""",CODE,M&T
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" TODO CHECK CORRECTNESS!! """"""",M&T,M&T
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" TODO """"""",CODE,CODE
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" FIXME: Handle execution_count (always change to None?) """"""",DEFECT,DEFECT
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" todo sweep """"""",CODE,CODE
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" FIXME remove test when square_distances=True becomes the default in 0.26 """"""",CODE,CODE
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" TODO: replace with (stable) Draft6Validator; if available """"""",CODE,CODE
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" XXX : can do better to avoid precision overflows """"""",DEFECT,CODE
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" TODO: I believe this is not really much used """"""",CODE,CODE
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" TODO: check if stride of 2 causes alignment issues if the featuremap """"""",DEFECT,M&T
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" \""\""\""Converts legacy encodings into Unicode. ||  || TODO: Rm regex dependency || TODO: Add tests || \""\""\"" """"""",M&T,CODE
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" TODO test nestedness """"""",M&T,M&T
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" TODO Add this to other loaders as well. """"""",CODE,DESIGN
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" TODO hack and set the eval model location inside info_space """"""",CODE,CODE
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" TODO: maybe refactor this """"""",CODE,CODE
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" TODO use pop """"""",CODE,CODE
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" TODO: support more backbone """"""",DESIGN,M&T
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" XXX: using .values to check date type since DatetimeIndex returns """"""",CODE,M&T
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" TODO write a warning """"""",DEFECT,M&T
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" TODO update doc above """"""",DOCUMENTATION,CODE
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" FIXME: What about the next diff entry? """"""",DEFECT,DEFECT
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" TODO add test for this """"""",M&T,M&T
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" TODO; make nicer """"""",CODE,CODE
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" XXX might possibly be slow solution; but every worker needs reseted LDA model for every iteration """"""",DEFECT,CODE
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" apparently package_deps are broken in 3.4 """"""",DEFECT,DEFECT
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" TODO: unroll\/roll are great candidates for a context manager since they're always used in conjunction. """"""",CODE,DESIGN
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" TODO : gt maps are not currently transformed! (need refact w\/ dict keys) """"""",DEFECT,DEFECT
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" Needed for the test_custom_tokenizer is the TestWikiCorpus class. """"""",CODE,M&T
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" The following identity layer is only needed so that subsequent two lambda layers can be optional. """"""",CODE,CODE
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" FIXME homogeneize the meaning of margin parameter """"""",DESIGN,CODE
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" TODO: remove timestamp_series_type """"""",CODE,CODE
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" TODO: maybe add testStepTrain (and possibly some other tests) from dopamine """"""",M&T,M&T
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" TODO: decorator params: parallelization (e.g. threads; processes; async\/await; greenlets;...) """"""",DESIGN,DESIGN
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" XXX Refactor to calculate the Rician SNR: """"""",CODE,DESIGN
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" need the shape TODO """"""",DESIGN,CODE
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" TODO: set other defaults than those in cp.audio.filterbank for MFCCs? """"""",CODE,CODE
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" TODO: test that rebuilding multiple times works properly """"""",M&T,M&T
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" env = ScaledFloatFrame(env)  # TODO: use for dqn? """"""",CODE,CODE
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" XXX: one could be smarter here """"""",CODE,CODE
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" TODO Split into separate functions """"""",DESIGN,DESIGN
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" TODO: result_dict contains batches of images; while """"""",DEFECT,DEFECT
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" FIXME: can use n_jobs here too """"""",CODE,CODE
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" todo: change the feature_na_method! """"""",CODE,CODE
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" XXX: code for timestamp series getitem in regular Numba """"""",CODE,DESIGN
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" # hackier; fixme to use regex or something """"""",CODE,CODE
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" TODO: needs to be re-written to match new stitch datasets signature. """"""",CODE,CODE
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" This is needed because the pre-activation variant does not have batch """"""",CODE,CODE
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" r\""\""\""Run inference on random sequences many times; saving the top results. ||  || This module is designed to run inference on a trained aptamers TF model || to score many sequences and then write out the top scoring sequences to || be used in other analysis. For example; these top predicted sequences || can read in the colab picking sequences in order || to validate the TF model. ||  || This module uses the standard aptamers tensorflow infrastructure to run || the inference. This is the inferer class defined in || learning\/eval_feedforward and described in the Aptamers TensorFlow Doc. ||  || Inference is generally run in batches of sequences; so a MapFlat function || is used to combine the results of interference into a flattened list || of (sequence; score) pairs. (In other words; each map function returns || a list of (sequence; score) pairs and these results are combined into || one list of pairs. Using a standard Map function would result in a || list of lists which is not what we want.) From there; the Top.Of || combiner returns only the top results; sorted by highest score. These || are then written to a text file. ||  || For now; each batch creates its own inferer; causing each map function || to have more overhead. Because of this;batch sizes around the default of || 10000 are performant. Fixing this in the future means converting the || MapFlat to a ParDo and initializing the inferer in start_bundle. || This module runs inference 1 billion times in 50 minutes so it || is sufficient for now ||  || Run locally with: ||  ||   :search_inference -- --flume_exec_mode=UNOPT \\ ||   --target_name='target' \\ ||   --model_dir=xxx \\ ||    --checkpoint_path='model.ckpt-312500' \\ ||    --output_name=xxx\/base30_1B_inference_top2k ||  || \""\""\"" """"""",DESIGN,DOCUMENTATION
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" TODO: Check if self._mean_squared_error_w_precision can be used here """"""",M&T,M&T
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" seem out of place. If you were able to do better; feel free to share your """"""",DESIGN,CODE
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" TODO(fstahlberg): Move to config """"""",DESIGN,DESIGN
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" Unused """"""",CODE,CODE
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" TODO: Basically identical to `test_intra_cv_target_transform` except for repeated KFold """"""",CODE,M&T
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" TODO switch similar statements to work inplace (w\/o making a copy) """"""",CODE,CODE
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" TODO: num pad examples is not set here if fillup strategy would be padding """"""",DOCUMENTATION,DEFECT
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" TODO : docs and example """"""",DOCUMENTATION,M&T
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" TODO: the y_train should be given us externally; so far we create it as random values """"""",DESIGN,DESIGN
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" TODO: Indexing not thoroughly tested """"""",M&T,M&T
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" TODO: Change the optimizer to the appropriate Optimizer class """"""",CODE,CODE
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" TODO make threshold a variable """"""",CODE,DESIGN
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" XXX copy_() ? """"""",CODE,CODE
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" Todo: mock nb Gpus so all these tests can run on any device """"""",CODE,M&T
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" Pass on diff to external difftool (TODO: store in global metadata at end instead of in separate diff dicts?) """"""",DESIGN,CODE
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" TODO: Why does this handle the 0 case the opposite of others? """"""",DEFECT,DEFECT
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" TODO: test that examples are executed after a no-plot and produce """"""",M&T,M&T
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" FIXME: pixel_classes dict needs to be populated with classes obtained from target """"""",DEFECT,CODE
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" XXX: Check why only 2 digits """"""",M&T,M&T
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" TODO: Add this to configuration framework """"""",DESIGN,DESIGN
+"Self-admitted technical debt (SATD) is technical debt admitted by the developer through source code comments.
+There are five types of software technical debts:
+
+Code: Bad coding practices leading to poor legibility of code, making it difficult to understand and maintain.
+M&T: Problems found in implementations involving testing or monitoring subcomponents.
+Defect: Identified defects in the system that should be addressed.
+Design: Areas which violate good software design practices, causing poor flexibility to evolving business needs.
+Documentation: Inadequate documentation that exists within the software system.
+
+Choose and assign ONE label among: Code, M&T, Defect, Design, or Documentation.
+
+### Technical debt comment: """""" XXX JRK: Should this test whether test_times if a DecodingTime """"""",M&T,M&T
