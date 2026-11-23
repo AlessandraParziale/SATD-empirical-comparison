@@ -1,2 +1,13 @@
 venv311/
 *Dataset_Binary/Dataset_Yu/merged_backup.csv
+/DL/glove.6B.300d.txt
+/DL/2023-MT-BERT-SATD/bert-base-uncased/config.json
+/DL/2023-MT-BERT-SATD/bert-base-uncased/vocab.txt
+/DL/2023-MT-BERT-SATD/bert-base-uncased/pytorch_model.bin
+/nltk_data/
+/DL/__pycache__/
+/DL/BiLSTM_Attention/__pycache__/
+/DL/2023-MT-BERT-SATD/__pycache__/
+/DL/CNN_SATD/__pycache__/
+/DL/FF/__pycache__/
+/DL/GGSATD/__pycache__/

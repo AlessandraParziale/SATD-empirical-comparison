@@ -1,0 +1,7 @@
+codecarbon
+nltk
+numpy
+pandas
+scikit-learn
+six
+torch

@@ -1,0 +1,36 @@
+{
+  "repetitions": 10,
+  "delay_seconds": 60,
+  "randomize_order": true,
+  "order_seed": 6666,
+  "model_seed": 6666,
+  "seed_mode": "increment",
+  "output_dir": "/work/satd-empirical-comparison/DL/experiment_runs",
+  "experiments": [
+    {
+      "id": "ggsatd-maldonado",
+      "model": "ggsatd",
+      "args": ["--task", "binary", "--dataset", "maldonado", "--dataset-dir", "/data/satd-empirical-comparison/Dataset", "--glove", "/data/satd-empirical-comparison/resources/glove.6B.300d.txt", "--device", "cuda"]
+    },
+    {
+      "id": "bilstm-maldonado",
+      "model": "bilstm",
+      "args": ["--task", "binary", "--dataset", "maldonado", "--dataset-dir", "/data/satd-empirical-comparison/Dataset", "--device", "cuda"]
+    },
+    {
+      "id": "cnn-maldonado",
+      "model": "cnn",
+      "args": ["--task", "binary", "--dataset", "maldonado", "--dataset-dir", "/data/satd-empirical-comparison/Dataset", "--device", "cuda"]
+    },
+    {
+      "id": "ffnn-c1-maldonado",
+      "model": "ffnn",
+      "args": ["--task", "binary", "--dataset", "maldonado", "--dataset-dir", "/data/satd-empirical-comparison/Dataset", "--hidden-layers", "3", "--device", "cuda"]
+    },
+    {
+      "id": "mtbert-maldonado",
+      "model": "mt-bert",
+      "args": ["--datasets", "binary_maldonado", "multi_maldonado", "--dataset-dir", "/data/satd-empirical-comparison/Dataset", "--bert-dir", "/data/satd-empirical-comparison/resources/bert-base-uncased", "--device", "cuda"]
+    }
+  ]
+}
