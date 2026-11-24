@@ -44,9 +44,9 @@ phrase; all-padding winning windows are omitted.
 The article specifies a learning rate and optimized CNN sizes but does not
 state all final training settings. We use batch size 64 and dropout 0.5 from
 the referenced Kim CNN implementation, with 25 epochs as an explicit runtime
-reconstruction choice. There is no early stopping. The original paper's
-preprocessing removes exact duplicate comments; duplicates are retained here
-to match the other repository models and their input samples.
+reconstruction choice. The original paper's preprocessing removes exact
+duplicate comments; duplicates are retained here to match the other repository
+models and their input samples.
 
 The original paper is binary. For multiclass, the same class-proportion
 formula is applied to each class: each per-example cross-entropy is multiplied

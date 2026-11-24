@@ -1,3 +1,5 @@
+import contextlib
+import io
 import tempfile
 import unittest
 from pathlib import Path
@@ -96,6 +98,17 @@ class SATDCNNTests(unittest.TestCase):
             self.assertEqual(list(result.columns), [
                 "Model", "Class", "Precision_Mean", "Precision_Std", "Recall_Mean",
                 "Recall_Std", "F1_Mean", "F1_Std", "Support_Mean"])
+
+    def test_cv_runs_all_requested_epochs_per_fold(self):
+        torch.set_num_threads(1)
+        texts = [["common", f"word{i % 4}"] for i in range(40)]
+        labels = np.array([i % 2 for i in range(40)])
+        with tempfile.TemporaryDirectory() as directory, \
+                contextlib.redirect_stdout(io.StringIO()) as log:
+            run_cv(texts, labels, ["A", "B"], Path(directory), folds=2,
+                   epochs=3, embedding_epochs=1, filters=2)
+        self.assertIn("Fold 1/2, epoch 3/3", log.getvalue())
+        self.assertIn("Fold 2/2, epoch 3/3", log.getvalue())
 
 
 if __name__ == "__main__":

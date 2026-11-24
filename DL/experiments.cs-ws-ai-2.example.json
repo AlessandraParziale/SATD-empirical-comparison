@@ -1,36 +1,96 @@
 {
   "repetitions": 10,
   "delay_seconds": 60,
-  "randomize_order": true,
+  "randomize_order": false,
   "order_seed": 6666,
   "model_seed": 6666,
   "seed_mode": "increment",
   "output_dir": "/work/satd-empirical-comparison/DL/experiment_runs",
   "experiments": [
     {
-      "id": "ggsatd-maldonado",
+      "id": "ggsatd-binary-maldonado",
       "model": "ggsatd",
       "args": ["--task", "binary", "--dataset", "maldonado", "--dataset-dir", "/data/satd-empirical-comparison/Dataset", "--glove", "/data/satd-empirical-comparison/resources/glove.6B.300d.txt", "--device", "cuda"]
     },
     {
-      "id": "bilstm-maldonado",
+      "id": "ggsatd-binary-yu",
+      "model": "ggsatd",
+      "args": ["--task", "binary", "--dataset", "yu", "--dataset-dir", "/data/satd-empirical-comparison/Dataset", "--glove", "/data/satd-empirical-comparison/resources/glove.6B.300d.txt", "--device", "cuda"]
+    },
+    {
+      "id": "ggsatd-multi-maldonado",
+      "model": "ggsatd",
+      "args": ["--task", "multi", "--dataset", "maldonado", "--dataset-dir", "/data/satd-empirical-comparison/Dataset", "--glove", "/data/satd-empirical-comparison/resources/glove.6B.300d.txt", "--device", "cuda"]
+    },
+    {
+      "id": "ggsatd-multi-obrien",
+      "model": "ggsatd",
+      "args": ["--task", "multi", "--dataset", "obrien", "--dataset-dir", "/data/satd-empirical-comparison/Dataset", "--glove", "/data/satd-empirical-comparison/resources/glove.6B.300d.txt", "--device", "cuda"]
+    },
+    {
+      "id": "bilstm-binary-maldonado",
       "model": "bilstm",
       "args": ["--task", "binary", "--dataset", "maldonado", "--dataset-dir", "/data/satd-empirical-comparison/Dataset", "--device", "cuda"]
     },
     {
-      "id": "cnn-maldonado",
+      "id": "bilstm-binary-yu",
+      "model": "bilstm",
+      "args": ["--task", "binary", "--dataset", "yu", "--dataset-dir", "/data/satd-empirical-comparison/Dataset", "--device", "cuda"]
+    },
+    {
+      "id": "bilstm-multi-maldonado",
+      "model": "bilstm",
+      "args": ["--task", "multi", "--dataset", "maldonado", "--dataset-dir", "/data/satd-empirical-comparison/Dataset", "--device", "cuda"]
+    },
+    {
+      "id": "bilstm-multi-obrien",
+      "model": "bilstm",
+      "args": ["--task", "multi", "--dataset", "obrien", "--dataset-dir", "/data/satd-empirical-comparison/Dataset", "--device", "cuda"]
+    },
+    {
+      "id": "cnn-binary-maldonado",
       "model": "cnn",
       "args": ["--task", "binary", "--dataset", "maldonado", "--dataset-dir", "/data/satd-empirical-comparison/Dataset", "--device", "cuda"]
     },
     {
-      "id": "ffnn-c1-maldonado",
+      "id": "cnn-binary-yu",
+      "model": "cnn",
+      "args": ["--task", "binary", "--dataset", "yu", "--dataset-dir", "/data/satd-empirical-comparison/Dataset", "--device", "cuda"]
+    },
+    {
+      "id": "cnn-multi-maldonado",
+      "model": "cnn",
+      "args": ["--task", "multi", "--dataset", "maldonado", "--dataset-dir", "/data/satd-empirical-comparison/Dataset", "--epochs", "100", "--embedding-epochs", "25", "--device", "cuda"]
+    },
+    {
+      "id": "cnn-multi-obrien",
+      "model": "cnn",
+      "args": ["--task", "multi", "--dataset", "obrien", "--dataset-dir", "/data/satd-empirical-comparison/Dataset", "--epochs", "100", "--embedding-epochs", "25", "--device", "cuda"]
+    },
+    {
+      "id": "ffnn-binary-maldonado",
       "model": "ffnn",
       "args": ["--task", "binary", "--dataset", "maldonado", "--dataset-dir", "/data/satd-empirical-comparison/Dataset", "--hidden-layers", "3", "--device", "cuda"]
     },
     {
-      "id": "mtbert-maldonado",
+      "id": "ffnn-binary-yu",
+      "model": "ffnn",
+      "args": ["--task", "binary", "--dataset", "yu", "--dataset-dir", "/data/satd-empirical-comparison/Dataset", "--hidden-layers", "3", "--device", "cuda"]
+    },
+    {
+      "id": "ffnn-multi-maldonado",
+      "model": "ffnn",
+      "args": ["--task", "multi", "--dataset", "maldonado", "--dataset-dir", "/data/satd-empirical-comparison/Dataset", "--hidden-layers", "3", "--device", "cuda"]
+    },
+    {
+      "id": "ffnn-multi-obrien",
+      "model": "ffnn",
+      "args": ["--task", "multi", "--dataset", "obrien", "--dataset-dir", "/data/satd-empirical-comparison/Dataset", "--hidden-layers", "3", "--device", "cuda"]
+    },
+    {
+      "id": "mtbert-all-datasets",
       "model": "mt-bert",
-      "args": ["--datasets", "binary_maldonado", "multi_maldonado", "--dataset-dir", "/data/satd-empirical-comparison/Dataset", "--bert-dir", "/data/satd-empirical-comparison/resources/bert-base-uncased", "--device", "cuda"]
+      "args": ["--datasets", "binary_maldonado", "binary_yu", "multi_maldonado", "multi_obrien", "--dataset-dir", "/data/satd-empirical-comparison/Dataset", "--bert-dir", "/data/satd-empirical-comparison/resources/bert-base-uncased", "--device", "cuda"]
     }
   ]
 }

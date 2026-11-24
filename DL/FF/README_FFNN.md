@@ -77,13 +77,13 @@ setup, loading and preprocessing, feature extraction, training and evaluation;
 use `--no-codecarbon` only when measurement is not needed.
 
 The [experiment orchestrator](../README_EXPERIMENTS.md) example configurations
-include FFNN C1. The workstation configuration uses this entry:
+include FFNN C3. For example, the workstation configuration uses:
 
 ```json
 {
-  "id": "ffnn-c1-maldonado",
+  "id": "ffnn-binary-maldonado",
   "model": "ffnn",
-  "args": ["--task", "binary", "--dataset", "maldonado", "--dataset-dir", "/data/satd-empirical-comparison/Dataset", "--hidden-layers", "1", "--device", "cuda"]
+  "args": ["--task", "binary", "--dataset", "maldonado", "--dataset-dir", "/data/satd-empirical-comparison/Dataset", "--hidden-layers", "3", "--device", "cuda"]
 }
 ```
 

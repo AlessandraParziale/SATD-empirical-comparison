@@ -40,6 +40,22 @@ class ExperimentRunnerTests(unittest.TestCase):
                 {"id": "a", "model": "cnn", "args": []},
             ]})
 
+    def test_nonrandom_schedule_groups_repetitions_by_experiment(self):
+        config = validate_config({
+            "repetitions": 3, "randomize_order": False, "model_seed": 40,
+            "seed_mode": "increment",
+            "experiments": [
+                {"id": "a", "model": "cnn", "args": []},
+                {"id": "b", "model": "bilstm", "args": []},
+            ],
+        })
+        plan = make_plan(config, Path("test-output"))
+        self.assertEqual([(r["experiment"], r["repetition"], r["seed"]) for r in plan], [
+            ("a", 1, 40), ("a", 2, 41), ("a", 3, 42),
+            ("b", 1, 40), ("b", 2, 41), ("b", 3, 42),
+        ])
+        self.assertEqual(len({run["output_dir"] for run in plan}), 6)
+
     def test_runs_real_subprocesses_with_isolated_outputs_and_delay(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
@@ -69,7 +85,7 @@ class ExperimentRunnerTests(unittest.TestCase):
             manifest = json.loads((session / "manifest.json").read_text(encoding="utf-8"))
             self.assertEqual(manifest["status"], "completed")
             self.assertEqual([run["experiment"] for run in manifest["runs"]],
-                             ["one", "two", "one", "two"])
+                             ["one", "one", "two", "two"])
             for run in manifest["runs"]:
                 output = Path(run["output_dir"])
                 self.assertEqual(run["status"], "completed")

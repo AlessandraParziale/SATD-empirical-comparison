@@ -23,10 +23,20 @@ Copy-Item DL\experiments.example.json DL\experiments.json
 python DL\run_experiments.py DL\experiments.json
 ```
 
-The example selects all five models, CUDA and 10 repetitions. Before running,
-choose the experiments and verify CUDA, datasets, GloVe, MT-BERT model files,
-and FFNN's NLTK resources are available. See the individual model READMEs for
-dependencies and options.
+The example runs one full repetition of the same 17 experiments and model
+settings as the workstation profile, using seed 6666 and repository-local
+dataset and model paths. It covers the four dataset/task combinations for
+GGSATD, BiLSTM, CNN and FFNN, plus one joint MT-BERT run over all four tasks.
+Each run still uses 10-fold cross-validation, so this is not a quick smoke test.
+The example uses CUDA, a fixed experiment order and a 60-second pause between
+runs. Before running, verify CUDA, datasets, GloVe, MT-BERT model files, and
+FFNN's NLTK resources are available. See the individual model READMEs for
+dependencies and options. In particular, install NLTK's `stopwords` and
+`wordnet` corpora separately as described in the FFNN README.
+
+Use the results for exploratory parameter assessment, not an independent final
+test after selecting parameters based on them. Energy and timing results from a
+different computer are not directly comparable to workstation measurements.
 The arguments in `args` are passed as separate strings to the corresponding
 runner. For instance, add `"--folds", "5"` to one experiment's `args` to
 change its folds, or remove `"--device", "cuda"` to use its CPU default.
@@ -46,7 +56,7 @@ The remaining configuration fields are:
 | --- | --- | --- |
 | `repetitions` | `10` | Number of complete runs of each experiment. |
 | `delay_seconds` | `0` | Nonnegative pause between consecutive runs, not between folds. |
-| `randomize_order` | `true` | Shuffle the experiments separately within each repetition. |
+| `randomize_order` | `true` | Shuffle experiments within each repetition; when `false`, run all repetitions of each experiment consecutively in configuration order. |
 | `order_seed` | `6666` | Seed for reproducible scheduling; independent of model seeds. |
 | `model_seed` | `6666` | Seed passed to every model in the first repetition. |
 | `seed_mode` | `"fixed"` | `"fixed"` reuses the seed; `"increment"` adds the repetition index minus one. |
@@ -105,13 +115,30 @@ from the repository root:
 python DL/run_experiments.py DL/experiments.cs-ws-ai-2.example.json
 ```
 
-This profile runs the full 10-fold experiments 10 times, so it can occupy the
-workstation for a long time. It uses `seed_mode: "increment"`: repetitions use
-seeds 6666 through 6675, changing both the splits and model randomness. For a
-smoke test, make a separate config with one repetition and fewer folds; do not
-use those test results in the paper comparison. Before collecting results,
-verify all configured paths and record the workstation/GPU and software
-versions with the experiment conditions.
+This profile covers Maldonado and Yu for binary classification, and Maldonado
+and O'Brien for multiclass classification, without undersampling. GGSATD,
+BiLSTM, CNN and FFNN each run the four dataset/task combinations; MT-BERT runs
+all four tasks jointly. That is 17 experiments per repetition, or 170 full runs
+with the default 10 repetitions; at 10 folds per run this amounts to 1,700 outer
+folds, and MT-BERT fine-tunes BERT across all selected tasks in each fold. It
+can occupy the workstation for a very long time. MT-BERT's joint run is not
+directly equivalent to the four models' independent dataset/task runs.
+
+For CNN on multiclass Maldonado and O'Brien, the profile uses 100 CNN epochs
+and 25 Word2Vec epochs instead of the defaults of 25 and 5. These settings are
+exploratory: the separate epoch increases for O'Brien were assessed on test
+folds, and the settings have not been independently validated for either dataset.
+Select hyperparameters using validation data before reporting final test
+comparisons.
+
+The profile runs the 10 repetitions of each experiment consecutively in the
+configured order, with a 60-second pause between runs. It uses
+`seed_mode: "increment"`: repetitions use seeds 6666 through 6675, changing
+both the splits and model randomness. For a smoke test, make a
+separate config with one repetition and fewer folds; do not use those test
+results in the paper comparison. Before collecting results, verify all
+configured paths and record the workstation/GPU and software versions with the
+experiment conditions.
 
 ## Measurement and outputs
 

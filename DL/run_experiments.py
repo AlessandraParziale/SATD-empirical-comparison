@@ -84,21 +84,26 @@ def validate_config(config):
 
 def make_plan(config, session_dir):
     rng = random.Random(config["order_seed"])
-    plan = []
-    for repetition in range(1, config["repetitions"] + 1):
-        experiments = list(config["experiments"])
-        if config["randomize_order"]:
+    schedule = []
+    if config["randomize_order"]:
+        for repetition in range(1, config["repetitions"] + 1):
+            experiments = list(config["experiments"])
             rng.shuffle(experiments)
+            schedule.extend((experiment, repetition) for experiment in experiments)
+    else:
+        schedule = [(experiment, repetition) for experiment in config["experiments"]
+                    for repetition in range(1, config["repetitions"] + 1)]
+    plan = []
+    for experiment, repetition in schedule:
         seed = config["model_seed"] + (repetition - 1 if config["seed_mode"] == "increment" else 0)
-        for experiment in experiments:
-            run_dir = session_dir / f"rep-{repetition:03d}" / f"experiment-{experiment['id']}"
-            command = [sys.executable, "-u", str(MODEL_SCRIPTS[experiment["model"]]),
-                       *experiment["args"], "--seed", str(seed), "--output-dir", str(run_dir)]
-            plan.append({
-                "repetition": repetition, "experiment": experiment["id"],
-                "model": experiment["model"], "seed": seed, "output_dir": str(run_dir),
-                "command": command, "status": "pending",
-            })
+        run_dir = session_dir / f"rep-{repetition:03d}" / f"experiment-{experiment['id']}"
+        command = [sys.executable, "-u", str(MODEL_SCRIPTS[experiment["model"]]),
+                   *experiment["args"], "--seed", str(seed), "--output-dir", str(run_dir)]
+        plan.append({
+            "repetition": repetition, "experiment": experiment["id"],
+            "model": experiment["model"], "seed": seed, "output_dir": str(run_dir),
+            "command": command, "status": "pending",
+        })
     return plan
 
 
